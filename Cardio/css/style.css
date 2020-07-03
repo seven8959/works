@@ -1,0 +1,641 @@
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('../fonts/proximanovat-thin-webfont.eot');
+    src: url('../fonts/proximanovat-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanovat-thin-webfont.woff2') format('woff2'),
+         url('../fonts/proximanovat-thin-webfont.woff') format('woff'),
+         url('../fonts/proximanovat-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Header*/
+
+.navbar-light .navbar-nav .nav-link, .h1-style, .h5-style, .text-regular, .text-bold, .text-right-slid {
+	color: white;
+}
+
+.text-style, h4, .time-style, .text-bold, .text-right-slid {
+	font-family: 'proxima_novabold';
+}
+
+.text-justify, .h5-style, .text-regular {
+	font-family: 'proxima_novaregular';
+}
+	
+.header-bg {
+	background-repeat: no-repeat;
+	background: radial-gradient(circle at 85% 18%, #333e66 4%,transparent 30%, transparent 100%), url(../images/image_1.png);
+	background-size: cover;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.navbar-style {
+	padding: 80px 140px 0;
+}
+
+.collapse-style {
+	justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'proxima_novalight';
+  	font-size: 18px;
+  	padding: 14px 30px;
+  	transition: background .6s linear;
+}
+
+.active-style {
+	margin-left: 25px;
+	background: #00A8FF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	background: #00A8FF;
+	color: white;
+	transition: all .6s linear;
+}
+
+.h1-style {
+	padding: 360px 0 350px;
+	font-family: 'proxima_novathin';
+	font-size: 36px;
+	white-space: pre-line;
+}
+
+.text-style {
+	font-size: 60px;
+}
+
+.span-style {
+	color: #00a8ff;
+}
+
+/*Carousel*/
+
+.caption-style {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 35px 40px 25px;
+	text-align: left;
+}
+
+.carousel-item {
+	-webkit-transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+	   -moz-transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+	    -ms-transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+	     -o-transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+	        transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+.arrow-left, .arrow-right {
+	z-index: 20;
+}
+
+.text-justify {
+	font-size: 18px;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-bottom: 0;
+	padding-left: 30px;
+	position: relative;
+}
+
+.text-justify:before {
+	content: "";
+	position: absolute;
+	background: url(../images/css_sprites.png);
+	background-position: -10px -50px;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+	top: -20%;
+	left: 0;
+}
+
+.text-border:before {
+	content: "";
+	position: absolute;
+	background: url(../images/css_sprites.png);
+	background-position: -53px -10px;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 35%;
+	left: 11%;
+}
+
+.icon-heart:before {
+	content: "";
+	position: absolute;
+	background: url(../images/css_sprites.png);
+	background-position: -10px -10px;
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 20px;
+	top: 10%;
+	left: -1%;
+}
+
+.text-border {
+	padding: 15px 40px 15px 70px;
+	margin: 10px -40px;
+	border-bottom: solid 1px #ff5f53;
+	border-top: solid 1px #ff5f53;
+}
+
+.time-style {
+	font-size: 18px;
+}
+
+.training-time {
+	margin-top: 60px;
+}
+
+.indicators-style {
+	top: 15%;
+	left: 62%;
+	padding: 0;
+	margin: 0;
+}
+
+.carousel-indicators li {
+	width: 5px;
+	height: 5px;
+	border: 3px solid white;
+	background-color: transparent;
+	margin-right: 8px;
+	-o-background-clip: inherit;
+	   background-clip: inherit;
+}
+
+.carousel-indicators .active {
+	background-color: white;
+}
+
+.price-block {
+	position: relative;
+}
+
+.price-style {
+	position: absolute;
+	padding: 35px 40px;
+	top: 0;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	text-align: left;
+}
+
+.h5-style {
+	font-size: 18px;
+}
+
+.text-regular {
+	white-space: pre-line;
+	font-size: 24px;
+	margin: 120px 0 0;
+	line-height: 140%;
+}
+
+.text-bold {
+	font-size: 36px;
+}
+
+.text-right-slid {
+	font-size: 26px;
+	line-height: 130%;
+	margin: 47px 0;
+}
+
+.text-light {
+	font-family: 'proxima_novalight';
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 576px) {
+
+/*Header*/
+
+	.navbar-style {
+		padding: 30px 30px 0;
+	}
+
+	.navbar-button {
+		background: #FFF;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		text-align: right;
+	  	font-size: 16px;
+	  	padding: 5px 0;
+	  	width: 150px;
+	  	margin-left: auto;
+	  	transition: all .6s linear;
+	}
+
+	.active-style {
+		margin-left: 0;
+		background: none;
+	}
+
+	.navbar-light .navbar-nav .nav-link:hover {
+		background: #00A8FF;
+		color: white;
+		width: 150px;
+		padding-right: 30px;
+		margin-left: auto;
+		transition: all .6s linear;
+	}
+
+	.h1-style {
+		padding: 120px 0 100px;
+		font-size: 22px;
+	}
+
+	.text-style {
+		font-size: 36px;
+	}
+
+	/*Carousel*/
+
+	.caption-style {
+		padding: 30px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.text-justify {
+		font-size: 16px;
+	}
+
+	.text-border {
+		padding: 10px 40px 10px 70px;
+		margin: 10px -40px;
+	}
+
+	.icon-heart:before {
+		left: -5px;
+	}
+
+	.text-border:before {
+		left: 35px;
+	}
+
+	.time-style {
+		font-size: 16px;
+	}
+
+	.training-time {
+		margin-top: calc(45% - 60px);
+	}
+
+	.indicators-style {
+		top: 37px;
+	}
+
+	.carousel-indicators li {
+		width: 4px;
+		height: 4px;
+		border: 2px solid white;
+		margin-right: 6px;
+	}
+
+	.price-style {
+		padding: 30px;
+	}
+
+	.h5-style {
+		font-size: 16px;
+	}
+
+	.text-regular {
+		white-space: pre-line;
+		font-size: 22px;
+		margin-top: calc(75% - 60px);
+	}
+
+	.text-bold {
+		font-size: 30px;
+	}
+
+	.text-right-slid {
+		font-size: 22px;
+		margin-top: calc(45% - 60px);
+	}
+
+	.text-light {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+
+/*Header*/
+
+	.navbar-style {
+		padding: 30px 30px 0;
+	}
+
+	.navbar-button {
+		background: #FFF;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		text-align: right;
+	  	font-size: 18px;
+	  	padding: 5px 0;
+	  	width: 150px;
+	  	margin-left: auto;
+	  	transition: all .6s linear;
+	}
+
+	.active-style {
+		margin-left: 0;
+		background: none;
+	}
+
+	.navbar-light .navbar-nav .nav-link:hover {
+		background: #00A8FF;
+		color: white;
+		width: 150px;
+		padding-right: 30px;
+		margin-left: auto;
+		transition: all .6s linear;
+	}
+
+	.h1-style {
+		padding: 120px 0 100px;
+		font-size: 24px;
+	}
+
+	.text-style {
+		font-size: 42px;
+	}
+
+	/*Carousel*/
+
+	.caption-style {
+		padding: 30px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	.text-justify {
+		font-size: 18px;
+	}
+
+	.text-border {
+		padding: 15px 40px 15px 70px;
+		margin: 10px -40px;
+	}
+
+	.icon-heart:before {
+		left: -1%;
+	}
+
+	.text-border:before {
+		left: 35px;
+	}
+
+	.time-style {
+		font-size: 18px;
+	}
+
+	.training-time {
+		margin-top: 170px;
+	}
+
+	.indicators-style {
+		top: 37px;
+		right: -45px;
+	}
+
+	.carousel-indicators li {
+		width: 5px;
+		height: 5px;
+		border: 3px solid white;
+		margin-right: 6px;
+	}
+
+	.price-style {
+		padding: 30px;
+	}
+
+	.h5-style {
+		font-size: 18px;
+	}
+
+	.text-regular {
+		white-space: pre-line;
+		font-size: 24px;
+		margin: 240px 0 0;
+	}
+
+	.text-bold {
+		font-size: 32px;
+	}
+
+	.text-right-slid {
+		font-size: 24px;
+		margin: 130px 0;
+	}
+
+	.text-light {
+		font-size: 18px;
+	}
+
+}	
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+/*Header*/
+
+	.navbar-style {
+		padding: 45px 45px 0;
+	}
+
+	.navbar-button {
+		background: #FFF;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		text-align: right;
+	  	font-size: 18px;
+	  	padding: 5px 0;
+	  	width: 150px;
+	  	margin-left: auto;
+	  	transition: all .6s linear;
+	}
+
+	.active-style {
+		margin-left: 0;
+		background: none;
+	}
+
+	.navbar-light .navbar-nav .nav-link:hover {
+		background: #00A8FF;
+		color: white;
+		width: 150px;
+		padding-right: 30px;
+		margin-left: auto;
+		transition: all .6s linear;
+	}
+
+	.h1-style {
+		padding: 150px 0 130px;
+		font-size: 26px;
+	}
+
+	.text-style {
+		font-size: 48px;
+	}
+
+	/*Carousel*/
+
+	.text-border:before {
+		left: 35px;
+	}
+
+	.training-time {
+		margin-top: 120px;
+	}
+
+	.indicators-style {
+		top: 37px;
+		right: -45px;
+	}
+
+	.text-regular {
+		margin: 190px 0 0;
+	}
+
+	.text-right-slid {
+		font-size: 26px;
+		margin: 85px 0;
+	}
+
+} 
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+/*Header*/
+
+	.navbar-style {
+		padding: 60px 100px 0;
+	}	
+
+	/*Carousel*/
+
+	.caption-style {
+		padding: 30px;	
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.text-border:before {
+		left: 37px;
+		top: 25%;
+	}
+
+
+	.text-justify {
+		font-size: 14px;
+	}
+
+	.text-border {
+		padding: 10px 40px 10px 70px;
+	}
+
+	.time-style {
+		font-size: 16px;
+	}
+
+	.training-time {
+		margin-top: 30px;
+	}
+
+	.carousel-indicators li {
+		width: 4px;
+		height: 4px;
+		border: 2px solid white;
+	}
+
+	.price-style {
+		padding: 30px;
+	}
+
+	.h5-style {
+		font-size: 16px;
+	}
+
+	.text-regular {
+		font-size: 22px;
+		margin: 90px 0 0;
+	}
+
+	.text-bold {
+		font-size: 32px;
+	}
+
+	.text-right-slid {
+		font-size: 22px;
+		line-height: 130%;
+		margin: 35px 0;
+	}
+
+	.text-light {
+		font-size: 16px;
+	}
+}
