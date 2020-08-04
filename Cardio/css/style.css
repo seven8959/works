@@ -44,7 +44,7 @@
 
 /*Header*/
 
-.navbar-light .navbar-nav .nav-link, .h1-style, .h5-style, .text-regular, .text-bold, .text-right-slid {
+.navbar-light .navbar-nav .nav-link, .h1-style, .h5-style, .text-regular, .text-bold, .text-right-slid, .text-price, .programm-list {
 	color: white;
 }
 
@@ -52,11 +52,11 @@
 	font-family: 'proxima_novabold';
 }
 
-.text-justify, .h5-style, .text-regular, .items-hover p, .text-hover, .h4-style span, .button-style {
+.text-justify, .h5-style, .text-regular, .items-hover p, .text-hover, .h4-style span, .button-style, .programm-list {
 	font-family: 'proxima_novaregular';
 }
 
-.text-light, .items-text {
+.text-light, .items-text, .text-price {
 	font-family: 'proxima_novalight';
 }
 
@@ -504,6 +504,89 @@ h4 {
 	transition: all .6s ease-out;
 }
 
+/*Pricing*/
+
+.pricing {
+	padding: 160px 0;
+	text-align: center;
+	background: url(../images/IMG-run.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.pricing .h2-style {
+	color: #FFF;
+	padding-top: 0;
+	line-height: .9;
+} 
+
+.pricing .items-text {
+	color: #FFF;	
+}
+
+.pricing-style {
+	margin-top: 160px;
+}
+
+.pricing-blocks {
+	background: rgba(0, 168, 255, .8);
+	text-align: left;
+	padding: 60px;
+
+}
+
+.pricing-blocks:last-child {
+	background: rgba(187, 187, 187, .8);
+	text-align: center;
+}
+
+.pricing-blocks:last-child .h4-style{
+	letter-spacing: 2px;
+}
+
+.pricing-blocks .h4-style {
+	font-size: 24px;
+	color: #FFF;
+	margin: 0;
+}
+
+.text-price {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1.7;
+}
+
+.pricing-blocks button {
+	border: 1px solid white;
+	color: #FFF;
+	margin: 55px 0 0;
+	transition: all .6s ease-out;
+}
+
+.pricing-blocks:nth-child(2) {
+	padding-left: 20px;
+}
+
+.programm-list {
+	list-style-type: square;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.pricing-blocks button:hover {
+	background: #BBB;
+	border: 1px solid white;
+	transition: all .6s ease-out;
+}
+
+.pricing-blocks:last-child button:hover {
+	background: #00a8ff;
+	border: 1px solid white;
+	transition: all .6s ease-out;
+}
+
 @media screen and (max-width: 576px) {
 
 /*Header*/
@@ -664,6 +747,52 @@ h4 {
 	.button-style {
 		padding: 10px 25px;
 		margin: 30px 0;
+	}
+
+/*Pricing*/
+
+	.pricing {
+		padding: 60px 10px;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		-ms-background-position-x: 36%;
+		    background-position-x: 36%;
+	}
+
+	.pricing-style {
+		margin-top: 60px;
+	}
+
+	.pricing-blocks {
+		text-align: center;
+		padding: 30px;
+
+	}
+
+	.pricing-blocks .h4-style {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+
+	.text-price {
+		font-size: 30px;
+	}
+
+	.pricing-blocks button {
+		margin: 35px 0 0;
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+
+	.pricing-blocks:nth-child(2) {
+		padding-left: 10px;
+		text-align: left;	
+	}
+
+	.programm-list {
+		font-size: 16px;
+		line-height: 1.7;
 	}
 
 }
@@ -834,6 +963,50 @@ h4 {
 		margin: 30px 0;
 	}	
 
+/*Pricing*/
+
+	.pricing {
+		padding: 60px 10px;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		-ms-background-position-x: 36%;
+		    background-position-x: 36%;
+	}
+
+	.pricing-style {
+		margin-top: 60px;
+	}
+
+	.pricing-blocks {
+		text-align: left;
+		padding: 30px;
+	}
+
+	.pricing-blocks .h4-style {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+
+	.text-price {
+		font-size: 30px;
+	}
+
+	.pricing-blocks button {
+		margin: 35px 0 0;
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+
+	.pricing-blocks:nth-child(2) {
+		padding-left: 10px;	
+	}
+
+	.programm-list {
+		font-size: 16px;
+		line-height: 1.7;
+	}	
+
 }	
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -955,6 +1128,51 @@ h4 {
 		margin: 60px 0;
 	}	
 
+/*Pricing*/
+
+	.pricing {
+		padding: 60px 10px;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		-ms-background-position-x: 36%;
+		    background-position-x: 36%;
+	}
+
+	.pricing-style {
+		margin-top: 60px;
+	}
+
+	.pricing-blocks {
+		text-align: left;
+		padding: 30px;
+	}
+
+	.pricing-blocks .h4-style {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+
+	.text-price {
+		font-size: 30px;
+	}
+
+	.pricing-blocks button {
+		margin: 35px 0 0;
+		padding: 10px 25px;
+		font-size: 16px;
+	}
+
+	.pricing-blocks:nth-child(2) {
+		padding-left: 10px;	
+	}
+
+	.programm-list {
+		font-size: 16px;
+		line-height: 1.7;
+	}	
+
+
 } 
 
 
@@ -1066,5 +1284,22 @@ h4 {
 	.button-style {
 		padding: 10px 28px;
 	}
+
+/*Pricing*/
+
+	.pricing {
+		padding: 100px;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		-ms-background-position-x: 36%;
+		    background-position-x: 36%;
+	}
+
+	.programm-list {
+		font-size: 16px;
+		line-height: 2.2;
+	}	
+
 
 }
