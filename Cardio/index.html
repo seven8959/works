@@ -5,10 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Cardio</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="https://kit.fontawesome.com/bd5db6ae46.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -250,7 +253,7 @@
 		</div>	
 	</section>
 
-<!-- Section -->
+<!-- Pricing -->
 	
 	<section class="pricing">
 		<h2 class="h2-style">Pricing
@@ -282,6 +285,46 @@
 		</div>
 	</section>
 
-	
+<!-- Bottom-slider -->
+
+	<article>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="owl-carousel owl-theme">
+					    <div class="item">
+					    	<i class="fab fa-linkedin-in"></i>
+					    	<p>To enjoy the glow of good health, you must exercise.</p>
+					    	<span class="items-text">#health #training #exercise</span>
+					    </div>
+					    <div class="item">
+					    	<i class="fab fa-facebook-f"></i>
+							<p>To enjoy the glow of good health, you must exercise.</p>
+					    	<span class="items-text">#health #training #exercise</span>
+					    </div>
+					    <div class="item">
+					    	<i class="fab fa-twitter"></i>
+							<p>To enjoy the glow of good health, you must exercise.</p>
+					    	<span class="items-text">#health #training #exercise</span>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<script>
+		$('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    autoplay:true,
+	    autoplayHoverPause:true,
+	    smartSpeed:1000,
+	    responsive:{
+	        0:{
+	            items:1
+	        } 
+	    }
+		})
+	</script>
 </body>
 </html>

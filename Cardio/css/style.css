@@ -42,9 +42,13 @@
     font-style: normal;
 }
 
+body {
+	text-align: center;
+}
+
 /*Header*/
 
-.navbar-light .navbar-nav .nav-link, .h1-style, .h5-style, .text-regular, .text-bold, .text-right-slid, .text-price, .programm-list {
+.navbar-light .navbar-nav .nav-link, .h1-style, .h5-style, .text-regular, .text-bold, .text-right-slid, .text-price, .programm-list, p {
 	color: white;
 }
 
@@ -56,7 +60,7 @@
 	font-family: 'proxima_novaregular';
 }
 
-.text-light, .items-text, .text-price {
+.text-light, .items-text, .text-price, p {
 	font-family: 'proxima_novalight';
 }
 
@@ -587,6 +591,52 @@ h4 {
 	transition: all .6s ease-out;
 }
 
+/*Bottom-slider*/ 
+
+article {
+	background: #00A8FF;
+	padding: 160px 0;
+}
+
+.fab {
+	font-size: 30px;
+	color: #FFF;
+}
+
+article p {
+	color: #FFF;
+	font-size: 30px;
+	margin: 80px 0 0;
+}
+
+article .items-text {
+	color: #7FD1FF;
+	font-size: 30px;
+}
+
+.owl-dots {
+	margin-top: 80px;
+}
+
+.owl-carousel button.owl-dot {
+	width: 8px;
+	height: 8px;
+	margin: 0 5px;
+	border: 2px solid white;
+}
+
+.owl-carousel button.owl-dot.active {
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	background: #FFF;
+} 
+
+button:focus {
+	outline: none;
+}
+
 @media screen and (max-width: 576px) {
 
 /*Header*/
@@ -793,6 +843,20 @@ h4 {
 	.programm-list {
 		font-size: 16px;
 		line-height: 1.7;
+	}
+
+/*Bottom-slider*/ 
+
+	article {
+		padding: 60px 0;
+	}
+
+	article p {
+		margin: 40px 0 0;
+	}
+
+	.owl-dots {
+		margin-top: 40px;
 	}
 
 }
@@ -1007,6 +1071,20 @@ h4 {
 		line-height: 1.7;
 	}	
 
+/*Bottom-slider*/ 
+
+	article {
+		padding: 60px 0;
+	}
+
+	article p {
+		margin: 40px 0 0;
+	}
+
+	.owl-dots {
+		margin-top: 40px;
+	}	
+
 }	
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1170,8 +1248,21 @@ h4 {
 	.programm-list {
 		font-size: 16px;
 		line-height: 1.7;
-	}	
+	}
 
+/*Bottom-slider*/ 
+
+	article {
+		padding: 60px 0;
+	}
+
+	article p {
+		margin: 60px 0 0;
+	}
+
+	.owl-dots {
+		margin-top: 60px;
+	}		
 
 } 
 
@@ -1301,5 +1392,18 @@ h4 {
 		line-height: 2.2;
 	}	
 
+/*Bottom-slider*/ 
+
+	article {
+		padding: 100px 0;
+	}
+
+	article p {
+		margin: 80px 0 0;
+	}
+
+	.owl-dots {
+		margin-top: 80px;
+	}
 
 }
