@@ -214,7 +214,7 @@
 						<h4 class="h4-style">Eva Adamson
 							<span>Fitness Instructor</span>
 						</h4>
-						<button type="button" class="btn btn-primary button-style">Sign Up Now</button>
+						<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Sign Up Now</button>
 					</div>
 				</div>
 				<div class="col-12 col-lg-4">
@@ -230,7 +230,7 @@
 						<h4 class="h4-style">Nick Williams
 							<span>Personal Trainer</span>
 						</h4>
-						<button type="button" class="btn btn-primary button-style">Sign Up Now</button>
+						<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Sign Up Now</button>
 					</div>
 				</div>
 				<div class="col-12 col-lg-4">
@@ -246,11 +246,61 @@
 						<h4 class="h4-style">John Philips
 							<span>Personal Trainer</span>
 						</h4>
-						<button type="button" class="btn btn-primary button-style">Sign Up Now</button>
+						<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Sign Up Now</button>
 					</div>
 				</div>
 			</div>
 		</div>	
+		
+<!-- Modal Form -->
+
+		<div class="modal modal-bg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	    		<div class="modal-content modal-style">
+	      			<div class="modal-header modal-header-style">
+	        			<button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+	         				<span aria-hidden="true">&times;</span>
+	        			</button>
+	        			<h4 class="h4-style">Sign Up</h4>
+	      			</div>
+		      		<div class="modal-body modal-body-style">
+						<form action="#">						
+						    <div class="form-group col-6 offset-3 form-style">
+						    	<input type="text" class="form-control form-control-style" placeholder="First Name">
+						    </div>
+						    <div class="form-group col-6 offset-3 form-style">
+						    	<input type="text" class="form-control form-control-style" placeholder="Last Name">
+						    </div>
+						  	<div class="form-group col-6 offset-3 form-style">
+						    	<input type="text" class="form-control form-control-style phone" placeholder="Phone">
+						  	</div>
+						  	<div class="form-group col-6 offset-3 form-style">
+						    	<input type="email" class="form-control form-control-style" id="inputEmail4" placeholder="Email Address">
+						  	</div>
+						    <div class="form-group col-6 offset-3 form-style select-before">
+						      	<select id="inputState" class="form-control form-control-style">
+						        	<option selected>Pricing Plan</option>
+						        	<option>One Personal Trainer</option>
+						        	<option>Big gym space for training</option>
+						        	<option>Free tools & props</option>
+						        	<option>Free locker</option>
+						        	<option>Free before/after shower</option>
+						      	</select>
+						  	</div>
+						  	<div class="form-group col-6 offset-3 form-style">
+						    	<div class="form-check checkbox-style">
+						      		<input class="form-check-input check" type="checkbox" id="gridCheck">
+						      		<label class="form-check-label label-style" for="gridCheck">
+						        	I Agree to the <span class="labal-text">Terms & Conditions</span>
+						      		</label>
+						    	</div>
+						  	</div>
+						  	<button type="submit" class="btn btn-primary col-6 offset-3 button-style">Submit</button>
+						</form>
+		      		</div>
+	    		</div>
+	 	   	</div>
+		</div>
 	</section>
 
 <!-- Pricing -->
@@ -264,7 +314,7 @@
 				<div class="col-8 col-sm-6 col-md-5 col-xl-4 pricing-blocks">
 					<h4 class="h4-style">Yoga Pilates</h4>
 					<b class="text-price">$850.00 <span class="text-light">/ year</span></b>
-					<button type="button" class="btn btn-primary button-style">Sign Up Now</button>
+					<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Sign Up Now</button>
 				</div>
 				<div class="col-8 col-sm-6 col-md-5 col-lg-5 col-xl-4 pricing-blocks">
 					<ul class="programm-list">
@@ -279,7 +329,7 @@
 				<div class="col-8 col-sm-6 col-md-5 col-lg-5 col-xl-4 pricing-blocks">
 					<h4 class="h4-style">Cardio Training</h4>
 					<b class="text-price">$1000.00 <span class="text-light">/ year</span></b>
-					<button type="button" class="btn btn-primary button-style">Sign Up Now</button>
+					<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Sign Up Now</button>
 				</div>
 			</div>
 		</div>
@@ -312,6 +362,59 @@
 			</div>
 		</div>
 	</article>
+	
+<!-- Footer -->
+	
+	<footer>
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-12 col-sm-6">
+					<h4 class="h4-style">Reserve a Free Trial Class!</h4>
+					<span class="text-regular">Shape your body and improve your health.</span>
+					<button type="button" class="btn btn-primary button-style" data-toggle="modal" data-target="#exampleModal">Start Free Trial</button>
+				</div>
+				<div class="col-12 col-sm-6 footer-block">
+					<h4 class="h4-style">Opening Hours</h4>
+					<div class="row justify-content-start time-block">
+						<div class="col-6 col-xl-4">
+							<span class="days-text">Mon - Fri</span>
+							<span class="time-text">9:00 - 22:00</span>
+						</div>
+						<div class="col-6 col-xl-4">
+							<span class="days-text">Sat - Sun</span>
+							<span class="time-text">10:00 - 18:00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row copyright-margin">
+				<div class="col-auto mr-auto">
+					<p class="copyright">© 2015 All Rights Reserved. Powered 
+						by <span class="copyright-span">PHIr</span> exclusively for <span class="copyright-span">Codrops</span>	
+					</p>
+				</div>
+				<div class="col-auto">
+					<ul class="social">
+						<li>
+							<a href="#" class="facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="twitter">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="linkedin">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script>
 		$('.owl-carousel').owlCarousel({
 	    loop:true,
