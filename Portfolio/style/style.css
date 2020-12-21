@@ -153,7 +153,7 @@ header .logo a {
   text-decoration: none;
 }
 header .logo a h1 {
-  color: #6eff90;
+  color: #1ed290;
   font: 500 40px/1.2 Lobster, cursive;
 }
 header nav .menu {
@@ -169,21 +169,22 @@ header nav .menu li a {
   transition: color 0.6s linear;
 }
 header nav .menu li a:hover {
-  color: #6eff90;
+  color: #50ffc2;
   transition: color 0.6s linear;
 }
 .baner {
-  position: fixed;
+  margin-top: -10px;
   height: 100vh;
   width: 100%;
   background: linear-gradient(294deg, rgba(44, 62, 80, 0.3) 50%, rgba(12, 17, 23, 0.8)), radial-gradient(circle, rgba(0, 0, 0, 0.8) 5%, transparent 50% 10%), url(../img/background.jpeg);
   background-size: cover, 5px 5px, cover;
+  background-attachment: fixed;
 }
 .baner .baner_text {
   text-align: center;
-  position: relative;
   top: 40%;
   padding: 0 30px;
+  position: relative;
 }
 .baner .baner_text .h2_style {
   color: white;
@@ -215,11 +216,11 @@ header nav .menu li a:hover {
 }
 .baner .scroll_arrow:hover:after {
   transition: border-color 0.6s linear;
-  border-color: #6eff90;
+  border-color: #1ed290;
 }
 .baner .scroll_arrow:hover {
   transition: border-color 0.6s linear;
-  border-color: #6eff90;
+  border-color: #1ed290;
 }
 .baner .scroll_arrow:after {
   content: "";
@@ -232,7 +233,7 @@ header nav .menu li a:hover {
   border-left: 2px solid white;
   transform: rotate(225deg);
   transition: border-color 0.6s linear;
-  animation: arrow 1.2s linear infinite;
+  animation: arrow 1.5s linear infinite;
 }
 @keyframes arrow {
   0% {
@@ -243,4 +244,8 @@ header nav .menu li a:hover {
     top: 50%;
     opacity: 1;
   }
+}
+.about_me {
+  height: 800px;
+  background: red;
 }

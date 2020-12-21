@@ -65,7 +65,7 @@ a {
 
 @width: 1200px;
 @textAligne: center;
-@color: #6eff90;
+@color: #1ed290;
 @colorWhite: white;
 @fontH1: 700 44px Raleway, sans-serif;
 @fontOther: 400 20px Raleway, sans-serif;
@@ -107,7 +107,7 @@ header {
                     font: @fontOther;
                     .transition (@property: color);
                     &:hover {
-                        color: @color;
+                        color: @color + 50%;
                         .transition (@property: color);
                     }
                 }
@@ -118,16 +118,17 @@ header {
 }
 
 .baner {
-    position: fixed;
+    margin-top: -10px;
     height: 100vh;
     width: 100%;
     background: linear-gradient(294deg, rgba(44, 62, 80, 0.3) 50%, rgba(12, 17, 23, 0.8)), radial-gradient(circle, rgba(0,0,0,.8) 5%, transparent 50% 10%),url(../img/background.jpeg);
-    background-size: cover, 5px 5px, cover;
+    background-size: cover, 5px 5px, cover; 
+    background-attachment: fixed;
     .baner_text {
         text-align: @textAligne;
-        position: relative;
         top: 40%;
         padding: 0 30px;
+        position: relative;
         .h2_style {
             color: @colorWhite;
             font: @fontOther;
@@ -173,7 +174,7 @@ header {
             border-left: @border;
             transform: rotate(225deg);
             .transition (@property: border-color);
-            animation: arrow 1.2s linear infinite;
+            animation: arrow 1.5s linear infinite;
         }
     }
 }
@@ -191,5 +192,11 @@ header {
 
 }
 
+//About me
+
+.about_me {
+    height: 800px;
+    background: red;
+}
 
 
