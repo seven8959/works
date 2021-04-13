@@ -128,7 +128,7 @@ table {
 html,
 body {
   scroll-behavior: smooth;
-	font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .clearfix:after {
@@ -144,7 +144,7 @@ body {
 }
 
 a {
-	color: black;
+	color: #080808;
 	text-decoration: none;
 }
 
@@ -153,12 +153,15 @@ button {
 	border: none;
 	outline: none;
 	color: white;
+	font-family: "PT Sans", sans-serif;
+  font-weight: bold;
 }
 
 /* Hedaer */
 
 .full-container {
 	width: 100%;
+	font-weight: bold;
 }
 
 .header {
@@ -166,8 +169,9 @@ button {
 }	
 
 .wrapper {
-	width: 320px;
+	min-width: 320px;
 	padding: 10px;
+	margin: 0 auto; 
 }	
 
 .flex-block {
@@ -187,7 +191,7 @@ button {
 }
 
 .header-btn {
-	font-size: 13px;
+	font-size: 14px;
 	background: #f26522;
 	padding: 5px 10px;
 	transition: background .3s linear;
@@ -199,4 +203,92 @@ button {
 }
 
 /* Main-contant */
+
+.main>.wrapper {
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.heading-text {
+	font-size: 27px;
+} 
+
+.subtext, .title-text {
+	margin-top: 30px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.title-text {
+	font-weight: bold;
+}
+
+.set-menu {
+	margin-top: 20px;
+}
+
+.cards {
+	margin: 10px auto 0;
+	border: 2px solid rgb(172, 172, 172);
+	border-radius: 10px;
+	width: 252px;
+	padding: 10px 10px 25px;		
+}
+
+.cards>img {
+	width: 225px;
+}
+
+.cards-description {
+	width: 185px;
+	margin: 0 auto;
+}
+
+.description-title, .cards-set .description-subtext {
+	color: #8e0000;
+	font-size: 22px;
+}
+
+.description-subtext {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+}
+
+.description-link {
+	display: block;
+	margin-top: 40px;
+	cursor: inherit;
+	pointer-events: none;
+	color: #444444;
+}
+
+.active {
+	cursor: pointer;
+	pointer-events: visible;
+	color: #06811a;
+	transition: color .3s linear;
+}
+
+.active:hover {
+	color: #f26522;
+	transition: color .3s linear;
+}
+
+.cards-set {
+	margin-top: 20px;
+}
+
+.cards-set .description-title {
+	color: #080808;
+}
+
+.cards-set img {
+	width: 300px;
+}
+
+.cards-set .description-subtext {
+	font-weight: bold;
+}
 
