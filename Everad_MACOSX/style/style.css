@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @font-face {
 	font-family: 'MyriadPro-Regular';
-	src: url('../fonts/myriadpro-regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/myriadpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/myriadpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/myriadpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	src: url('../fonts/myriadpro-regular.eot'); 
+	src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/myriadpro-regular.woff2') format('woff2'), 
+		url('../fonts/myriadpro-regular.woff') format('woff'), 
+		url('../fonts/myriadpro-regular.ttf') format('truetype'),
+		url('../fonts/8143.otf') format('otf') 
 }
 
 html,
@@ -308,7 +309,8 @@ button {
 
 .carousel-title {
 	font-size: 30px;
-	font-family: 'MyriadPro-Regular';
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-weight: 400;
 	color: rgb(255, 255, 255);
 	text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);	
 }
@@ -461,4 +463,182 @@ button {
 
 }
 
+@media screen and (min-width: 1200px) {
+	
+	/* Hedaer */
 
+.wrapper {
+	width: 1200px;
+	padding: 10px 14px;
+}	
+
+.logo {
+	margin-left: 11px;
+}
+
+.logo-img {
+	width: 141px;
+}
+
+.heading {
+	font-size: 32px;
+	margin-left: 20px;
+}
+
+.header-btn {
+	font-size: 26px;
+	padding: 11px 59px 15px 31px;
+}
+
+/* Main-contant */
+
+.main {
+	padding: 36px 0 44px;
+}
+
+.main>.wrapper {
+	padding: 0 10px;
+}
+
+.heading-text {
+	font-size: 45px;
+	width: 970px;
+	margin: 0 auto 0 114px;
+	line-height: 132%;
+} 
+
+.subtext, .title-text {
+	margin: 42px auto 0;
+	font-size: 30px;
+	width: 730px;
+	line-height: 115%;
+}
+
+.title-text {
+	text-align: left;
+	margin: 34px 0 0 3px;
+}
+
+.set-menu {
+	margin-top: 41px;
+	justify-content: space-between;
+}
+
+.cards {
+	margin: 0;
+	padding: 7px 0 29px;
+	width: 254px;		
+}
+
+.cards>img {
+	width: 250px;
+}
+
+.cards-description .description-title {
+	margin-top: 6px;
+}
+
+.orange-rolls .description-title, .brown-rolls .description-title {
+	margin-left: 13px;
+}
+
+.description-subtext {
+	margin-top: 20px;
+	line-height: 150%;
+}
+
+.description-link {
+	margin-top: 37px;
+	font-size: 17px;
+}
+
+.cards-set {
+	margin-top: 0;
+	margin-right: 0;
+	width: 365px;
+}
+
+.cards-set .description-title {
+	margin: 0 31px 3px 0;
+}
+
+.cards-set .description-subtext {
+	margin: 15px 0 0 25px;
+	text-align: left;
+	line-height: 110%;
+	white-space: pre-line;
+}
+
+.orange-rolls .description-title {
+	margin-left: 13px;
+}
+
+.cards-set img {
+	width: 365px;
+	margin-top: 0;
+}
+
+.cards-set .description-title:last-child {
+	margin:  3px 0 0 91px;
+}
+
+/* Carousel */
+
+.section-carousel {
+	padding: 58px 0 113px;
+}
+
+.section-carousel .wrapper {
+	padding: 10px 30px;
+}
+
+.carousel-title {
+	font-size: 45px;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	margin-top: 58px;
+}
+
+.swiper-slide>img {
+	width: 900px;
+}
+
+.navigation-btn {
+	width: 360px;
+	margin: 57px auto 0;
+	bottom: 6px;
+}
+
+.button-prev, .button-next {
+	width: 35px;
+	height: 35px;
+	border-top: 7px solid white;
+	border-right: 7px solid white;	
+}
+
+.button-prev {
+	margin-left: 20px;
+}
+
+.swiper-pagination-bullet {
+	margin-top: 3px;
+	width: 46px;
+	height: 46px;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+	margin: 0 10px;
+}
+
+.footer {
+	padding: 15px 0;
+}
+
+.copyright {
+	font-size: 22px;
+	margin-left: 18px;
+}
+
+}
