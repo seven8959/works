@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/myriadpro-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/myriadpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/myriadpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/myriadpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
 
 html,
 body,
@@ -171,7 +178,8 @@ button {
 .wrapper {
 	min-width: 320px;
 	padding: 10px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	text-align: center; 
 }	
 
 .flex-block {
@@ -205,7 +213,6 @@ button {
 /* Main-contant */
 
 .main>.wrapper {
-	text-align: center;
 	padding: 30px 10px;
 }
 
@@ -292,3 +299,79 @@ button {
 	font-weight: bold;
 }
 
+/* Carousel */
+
+.section-carousel {
+	background-color: #6dcff6;
+	padding: 50px 0;
+}
+
+.carousel-title {
+	font-size: 30px;
+	font-family: 'MyriadPro-Regular';
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);	
+}
+
+.swiper-container {
+	margin-top: 30px;
+}
+
+.swiper-slide>img {
+	width: 300px;
+}
+
+.navigation-btn {
+	width: 150px;
+	margin: 30px auto 0;
+	position: relative;
+	bottom: 5px;
+}
+
+.button-prev, .button-next {
+	width: 20px;
+	height: 20px;
+	border-top: 5px solid white;
+	border-right: 5px solid white;	
+	border-radius: 2px;
+	transform: rotate(-135deg);
+	cursor: pointer;
+}
+
+.button-next {
+	transform: rotate(45deg);
+}
+
+.swiper-pagination {
+	position: static;
+	transition: background .3s ;
+	z-index: 0;
+	display: contents;
+}
+
+.swiper-pagination-bullet {
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	border-radius: 50%;
+	background: white;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: #f26522;
+}
+
+.footer {
+	padding: 10px 0;
+}
+
+.copyright {
+	font-size: 20px;
+	color: #333333;
+}
+
+
+@media screen and (min-width: 640px) {
+	
+}

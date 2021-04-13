@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Суши-мастер</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/script.js" defer></script>
   </head>
   <body>
@@ -16,7 +18,7 @@
       <div class="wrapper flex-block">
         <div class="logo">
           <a class="logo-link flex-block" href="#">
-            <img class="logo-img" src="images/clown-fish.png" alt="logo Sushi-shmaster" />
+            <img class="logo-img" src="images/clown-fish.webp" alt="logo Sushi-shmaster" />
             <h1 class="heading">Суши-шмастер</h1>
           </a>
         </div>
@@ -33,7 +35,7 @@
         <h3 class="title-text">Актуальные позиции</h3>
         <div class="set-menu">
           <figure class="cards green-rolls">
-            <img src="images/s3.png" alt="Greenball roll">
+            <img src="images/s3.webp" alt="Greenball roll">
             <figcaption class="cards-description">
               <h4 class="description-title">
                 Гринболь ролл
@@ -46,7 +48,7 @@
           </figure>
 
           <figure class="cards orange-rolls">
-            <img src="images/s1.png" alt="Oranjade roll">
+            <img src="images/s1.webp" alt="Oranjade roll">
             <figcaption class="cards-description">
               <h4 class="description-title">
                 Оранжад ролл
@@ -59,7 +61,7 @@
           </figure>
 
           <figure class="cards brown-rolls">
-            <img src="images/s2.png" alt="Brownie roll">
+            <img src="images/s2.webp" alt="Brownie roll">
             <figcaption class="cards-description">
               <h4 class="description-title">
                 Брауни ролл
@@ -75,9 +77,9 @@
             <h4 class="description-title">
               Синергетический сет
             </h4>
-            <img src="images/s44.png" alt="synergistic-set">
+            <img src="images/s44.webp" alt="synergistic-set">
             <p class="description-subtext">А для абитуриентов у нас есть масса комплиментов!</p>
-            <img src="images/s45.png" alt="Skarbowskj set">
+            <img src="images/s45.webp" alt="Skarbowskj set">
             <h4 class="description-title">
               Скарбовский сет
             </h4>
@@ -86,5 +88,38 @@
       </div>
     </main>
 
+<!-- Carousel -->
+
+    <section class="full-container section-carousel">
+      <div class="wrapper">
+        <h2 class="carousel-title">Самые выгодные предложения:</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/corousel_img.webp" alt="shrimp promotion">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/corousel_img.webp" alt="shrimp promotion">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/corousel_img.webp" alt="shrimp promotion">
+            </div>
+          </div>
+          <div class="navigation-btn flex-block">
+            <div class="button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer -->
+
+    <footer class="footer full-container">
+      <div class="wrapper">
+        <p class="copyright">Copyright<span id="year"></span></p>
+      </div>
+    </footer>
   </body>
 </html>
