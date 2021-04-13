@@ -212,8 +212,8 @@ button {
 
 /* Main-contant */
 
-.main>.wrapper {
-	padding: 30px 10px;
+.main {
+	padding: 30px 0;
 }
 
 .heading-text {
@@ -374,4 +374,91 @@ button {
 
 @media screen and (min-width: 640px) {
 	
+	/* Hedaer */
+
+.wrapper {
+	min-width: 640px;
+	padding: 10px 25px;
+}	
+
+.logo-img {
+	width: 100px;
 }
+
+.heading {
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+.header-btn {
+	font-size: 20px;
+	padding: 10px 46px 10px 27px;
+}
+
+/* Main-contant */
+
+.main {
+	padding: 40px 0;
+}
+
+.subtext, .title-text {
+	margin-top: 40px;
+	font-size: 24px;
+}
+
+.set-menu {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	margin: 10px;
+}
+
+.cards-set {
+	margin: 10px;
+	width: 255px;
+}
+
+.cards-set img {
+	width: 255px;
+	margin-top: 15px;
+}
+
+.cards-set .description-subtext {
+	font-weight: bold;
+}
+
+/* Carousel */
+
+.carousel-title {
+	font-size: 40px;
+}
+
+.swiper-container {
+	margin-top: 40px;
+}
+
+.swiper-slide>img {
+	width: 600px;
+}
+
+.navigation-btn {
+	width: 180px;
+	margin: 40px auto 0;
+}
+
+.footer {
+	padding: 10px 0;
+}
+
+.copyright {
+	font-size: 22px;
+}
+
+}
+
+
