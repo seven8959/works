@@ -1,0 +1,3597 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap");
+
+/* reset css */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* HTML5 display-role reset for older browsers * article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* repeat style */
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.full-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background-color: #f58021;
+  position: relative;
+  z-index: 5;
+}
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  color: #00a092;
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* HEADER */
+
+header,
+.block-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 28px;
+  height: 111px;
+}
+
+.nav-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.logo-header {
+  font-size: 1px;
+  opacity: 0;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.top-menu__list {
+  display: flex;
+}
+
+.top-menu__list__items {
+  margin-left: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.top-menu__list__items > a {
+  transition: color 0.3s linear;
+}
+
+.top-menu__list__items_active > a {
+  color: #00a092;
+  cursor: default;
+}
+
+.top-menu__list__items:hover > a {
+  color: #00a092;
+  transition: color 0.3s linear;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list > li {
+  margin-left: 30px;
+  transition: filter, transform 0.3s linear;
+}
+
+.social-list > li.youtube {
+  margin-left: 67px;
+}
+
+.social-list > li:hover {
+  filter: grayscale(70%);
+  transform: scale(1.1);
+  transition: filter, transform 0.3s linear;
+}
+
+.social-list > li > a {
+  padding: 0 20px 21px;
+  cursor: pointer;
+}
+
+.youtube {
+  width: 40px;
+  height: 40px;
+  background: url("assets/icons/css_sprites.png") 0 -40px;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  background: url("assets/icons/css_sprites.png") -40px 0;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
+  background: url("assets/icons/css_sprites.png") 0 0;
+}
+
+/* Watch your favorite animal online */
+
+.favorite-animal {
+  background-image: url("assets/images/Background.jpg");
+  background-position: -45px -57px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0 131px 0;
+}
+
+.baner {
+  margin-top: -12px;
+}
+
+.baner-text {
+  width: 890px;
+}
+
+.baner-top-text {
+  font-weight: 800;
+  font-size: 82px;
+  letter-spacing: 0.01em;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.baner-sub-text {
+  width: 430px;
+  margin-top: 31px;
+}
+
+.buner-btn {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  padding: 27px 65px 28px 29px;
+  background: #f58021;
+  border-radius: 5px;
+  transition: background 0.3s linear;
+  margin-top: 45px;
+  display: inline-block;
+}
+
+.buner-btn:after {
+  content: "";
+  position: absolute;
+  background: url("assets/icons/Union.svg");
+  width: 26px;
+  height: 22px;
+  top: 24px;
+  left: 185px;
+}
+
+.buner-btn:hover,
+.link-block:hover .link-to-map {
+  background: #d26004;
+  box-shadow: 0px 4px 30px rgba(245, 128, 33, 0.3);
+  transition: background 0.3s linear;
+}
+
+/* Welcome to the Online Zoo */
+
+.zoo-content {
+  display: flex;
+  align-items: center;
+}
+
+.content-margin {
+  margin-top: 150px;
+}
+
+.zoo-margin {
+  margin: 148px 0;
+}
+
+.text-margin {
+  margin: 0 40px 25px 0;
+}
+
+.text-margin-left {
+  margin: 0 0 3px 40px;
+}
+
+.zoo-text-style,
+.pets-text-style {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+
+.zoo-sub-text {
+  margin-top: 50px;
+}
+
+/* Your donation makes a difference */
+
+.block-flex {
+  padding: 0;
+}
+
+.block-donation,
+.pay-and-feed {
+  background: #20113d;
+  padding: 49px 0 45px;
+}
+
+.donation-text {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.donation-subtext,
+.card-text {
+  width: 609px;
+  margin-top: 20px;
+  font-weight: normal;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.donation-btn {
+  width: 320px;
+}
+
+.donation-btn-text,
+.pets-subtext,
+.animal-type,
+.animal-name {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number[type="number"],
+.dollar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.input-block {
+  position: relative;
+  display: flex;
+  margin-top: 8px;
+}
+
+.dollar {
+  position: absolute;
+  left: 14px;
+  top: 25px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.number {
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  padding: 25px 53px 25px 30px;
+  width: 360px;
+}
+
+input::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: text-indent 0.5s ease-in;
+  opacity: 1;
+}
+
+input:focus::placeholder {
+  text-indent: 300px;
+  transition: text-indent 0.5s ease-in;
+}
+
+.submit {
+  height: 71.5px;
+  padding: 0 40px;
+  background-color: #f58021;
+  border-radius: 5px;
+  position: relative;
+  transition: background 0.3s linear;
+  right: 81px;
+  top: 1px;
+}
+
+.submit:hover {
+  background: #d26004;
+  transition: background 0.3s linear;
+}
+
+.submit:after {
+  content: "";
+  position: absolute;
+  background: url("assets/icons/Union.svg");
+  width: 26px;
+  height: 22px;
+  top: 25px;
+  left: 28px;
+}
+
+/* meet some our Pets */
+
+.wrapper-center {
+  text-align: center;
+  margin-top: 137px;
+  width: 920px;
+}
+
+.pets-text-style {
+  margin-left: 18px;
+}
+
+.pets-subtext {
+  color: black;
+  margin-top: 50px;
+}
+
+.carousel-block {
+  margin: 102px auto 150px;
+  overflow-x: hidden;
+  width: 1900px;
+}
+
+.carousel-arrow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 175px;
+}
+
+.lion-640,
+.koala-640 {
+  display: none;
+}
+
+.carousel-arrow > button {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background: none;
+  position: relative;
+  border: 1px solid #20113d;
+  transition: background 0.3s linear;
+}
+
+.carousel-arrow > button:hover {
+  background: #20113d;
+  transition: background 0.3s linear;
+}
+
+.carousel-arrow > button:hover path {
+  fill: white;
+  transition: fill 0.3s linear;
+}
+
+.cards {
+  margin-top: 32px;
+  width: 1680px;
+  margin-left: auto;
+  position: relative;
+}
+
+.cards:after {
+  content: "";
+  width: 2%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  background: linear-gradient(270deg, white 44%, transparent 78%);
+}
+
+.top-cards,
+.bottom-cards {
+  display: flex;
+}
+
+.animal-card {
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s linear;
+}
+
+.animal-card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.animal-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s linear;
+}
+
+.card-content {
+  background: #20113d;
+  padding: 30px 0 76px 0;
+  text-align: center;
+  margin-top: -4px;
+  min-height: 311px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card-text {
+  width: 350px;
+  margin: 17px auto 0;
+}
+
+.card-eagle .card-text {
+  width: 351px;
+}
+
+.card-lion .card-text {
+  width: 375px;
+}
+
+.card-tiger .card-text {
+  padding-left: 3px;
+}
+
+.pets .card-tiger {
+  margin: 20px;
+}
+
+.animal-name {
+  position: absolute;
+  padding: 12px 26px;
+  background-color: #20113d;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+}
+
+.link-block {
+  display: inline-block;
+}
+
+.link-to-map,
+.cards-btn > a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.link-to-map {
+  color: #f58021;
+  padding: 26px 23px;
+  border-radius: 5px;
+  transition: background 0.3s linear;
+}
+
+.link-to-map > svg,
+.cards-btn > a > svg {
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+
+.link-block:hover .link-to-map {
+  color: white;
+}
+
+.link-block:hover path {
+  fill: white;
+  transition: fill 0.3s linear;
+}
+
+.carousel-block > .wrapper {
+  text-align: center;
+}
+
+.cards-btn {
+  margin-top: 80px;
+  color: #20113d;
+  border: 1px solid #20113d;
+  border-radius: 5px;
+  padding: 20px 38px 25px 37px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  transition: color, background 0.3s linear;
+}
+
+.cards-btn > svg {
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
+
+.cards-btn:hover {
+  background: #20113d;
+  border: 1px solid #ffffff;
+  color: white;
+  transition: color, background 0.3s linear;
+}
+
+.cards-btn:hover path {
+  fill: white;
+  transition: fill 0.3s linear;
+}
+
+.card-krokodile .card-content,
+.card-tiger .card-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-krokodile .card-text {
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+/* PAY AND FEED */
+
+.pay-and-feed {
+  padding: 91px 0 100px;
+}
+
+.pay-and-feed .pets-text-style {
+  color: white;
+  margin-left: 0;
+}
+
+.pay-cards {
+  margin-top: 100px;
+}
+
+.card-banana {
+  margin-top: 108px;
+}
+
+.card-monkey-banana {
+  margin-top: 84px;
+}
+
+.number-cards {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, white 100%, transparent 43%);
+  background-position: 100% 48%;
+  background-size: 91.5% 1px;
+}
+
+.card-info {
+  margin-top: 83px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img > img {
+  border-radius: 5px;
+}
+
+.card-description {
+  text-align: left;
+  margin: 20px 120px 0 0;
+  position: relative;
+  width: 560px;
+}
+
+.card-description:before {
+  content: "";
+  position: absolute;
+  background: url("assets/icons/Vector.png");
+  background-repeat: no-repeat;
+  width: 106px;
+  height: 80px;
+  top: 0;
+  left: 0;
+}
+
+.icon-card:before {
+  background: url("assets/icons/vector1.png");
+  background-repeat: no-repeat;
+}
+
+.icon-food:before {
+  background: url("assets/icons/Vector2.png");
+  background-repeat: no-repeat;
+}
+
+.icon-food {
+  width: 550px;
+  margin: 20px 130px 0 0;
+}
+
+.icon-food > .animal-type {
+  width: 540px;
+}
+
+.card-description .animal-type {
+  margin-top: 110px;
+}
+
+.card-description .card-text {
+  margin: 52px 0 0;
+  width: inherit;
+}
+
+.pay-btn {
+  margin-top: 54px;
+  padding: 29px 69px 28px 36px;
+}
+
+.pay-btn:after {
+  top: 27px;
+  left: 181px;
+}
+
+/* what our users think */
+
+.reviews-block {
+  padding: 52px 0 150px;
+  background-image: url("assets/images/image97.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.reviews-block .pets-text-style {
+  margin-left: 0;
+  color: white;
+}
+
+.reviews-block > .cards {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-block > .cards:after {
+  width: 0;
+}
+
+.carousel {
+  margin-left: 27px;
+  margin-right: 6px;
+}
+
+.reviews-text {
+  width: 560px;
+}
+
+.reviews-text > .pets-text-style {
+  width: 440px;
+  margin-top: 16px;
+}
+
+.reviews-text > .animal-type {
+  margin-top: 40px;
+}
+
+.top-bloquotes,
+.bottom-bloquotes {
+  display: flex;
+  justify-content: end;
+}
+
+.bloquotes {
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 50px 70px 50px;
+  position: relative;
+  width: 515px;
+  height: 463px;
+}
+
+.bloquotes:before {
+  content: "";
+  background-image: url("assets/icons/quotes.png");
+  width: 60px;
+  height: 46px;
+  position: absolute;
+  top: 47px;
+  left: 52px;
+}
+
+.bloquotes-margin {
+  margin-right: 0;
+}
+
+.bloquotes-margin .card-text {
+  width: 420px;
+}
+
+.bloquotes .animal-type {
+  color: black;
+  margin-top: 88px;
+}
+
+.bloquotes .card-text {
+  color: black;
+  margin: 20px 0 0;
+  width: 410px;
+}
+
+.bloquotes .link-to-map {
+  color: black;
+  padding: 0;
+  margin-top: 46px;
+  letter-spacing: 0;
+}
+
+.bloquotes .fix-margin {
+  margin-top: 18px;
+}
+
+.reviews-block .carousel-arrow {
+  margin: 44px auto 0 15px;
+  width: 180px;
+}
+
+.reviews-block .carousel-arrow > button {
+  border-color: white;
+}
+
+.reviews-block .carousel-arrow > button:hover {
+  background: white;
+}
+
+.reviews-block .carousel-arrow > button:hover path {
+  fill: #20113d;
+  transition: fill 0.3s linear;
+}
+
+.reviews-block .cards-btn {
+  color: white;
+  border-color: white;
+  margin-top: 375px;
+  padding: 20px 81px 24px 78px;
+}
+
+.reviews-block .cards-btn > svg {
+  left: 5px;
+}
+
+.reviews-block .cards-btn:hover {
+  background: #00a092;
+}
+
+/* care for the animals you love */
+
+.care-animals-block {
+  padding: 136px 0 150px;
+  text-align: center;
+}
+
+.care-animals-block .pets-text-style {
+  color: #00a092;
+  width: 576px;
+  margin: 0 auto;
+}
+
+.care-animals-block .pets-subtext {
+  width: 539px;
+  margin: 53px auto 0;
+}
+
+.cards-block {
+  margin-top: 79px;
+}
+
+.panda-640 {
+  display: none;
+}
+
+.big-card,
+.card-tiger {
+  margin: 20px 20px 20px 0;
+}
+
+.care-animals-block .card-content {
+  padding-top: 0;
+  min-height: 285px;
+}
+
+.care-animals-block .card-text {
+  margin-top: 30px;
+}
+
+.care-animals-block .tiger-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.care-animals-block .cards-btn {
+  margin-top: 76px;
+}
+
+.online-zoo-img {
+  margin-top: 150px;
+}
+
+.card-panda .card-text {
+  width: 400px;
+  white-space: pre-line;
+  margin-top: 3px;
+}
+
+.card-tiger .card-text {
+  width: 337px;
+}
+
+.card-lemur .card-text {
+  width: 400px;
+}
+
+.card-eagles .card-text {
+  width: 375px;
+}
+
+/* footer */
+
+footer {
+  background: #20113d;
+  padding: 72px 0 44px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos-icons {
+  display: flex;
+  width: 414px;
+  justify-content: space-between;
+}
+
+.logo-footer path {
+  transition: fill 0.3s linear;
+}
+
+.logo-footer:hover path {
+  fill: #00a092;
+  transition: fill 0.3s linear;
+}
+
+.bottom-nav a {
+  color: white;
+}
+
+.footer-menu .cards-btn {
+  margin: 0;
+  padding: 21px 34px 23px;
+  border-color: white;
+  position: relative;
+  bottom: 4px;
+}
+
+.footer-menu .cards-btn {
+  color: white;
+}
+
+.footer-menu .cards-btn:hover {
+  background: #00a092;
+  transition: background 0.3s linear;
+}
+
+.bottom-nav {
+  position: relative;
+  bottom: 6px;
+}
+
+.bottom-nav > ul {
+  justify-content: space-between;
+  width: 425px;
+}
+
+.bottom-nav > ul > li {
+  margin-left: 0;
+}
+
+.copiright-block {
+  margin-top: 67px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
+}
+
+.copiright {
+  display: flex;
+  align-items: center;
+  width: 447px;
+  justify-content: space-between;
+}
+
+.copiright-block .social-list {
+  justify-content: space-between;
+  width: 200px;
+}
+
+.copiright-block .social-list > li {
+  margin-left: 0;
+}
+
+.copiright > li {
+  color: white;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1919px) {
+  .wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  .carousel-block {
+    margin: 100px auto 113px;
+    width: 100%;
+  }
+
+  .cards {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .reviews-block > .cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+
+  .reviews-text {
+    margin-left: 40px;
+  }
+
+  .carousel {
+    margin-top: 30px;
+  }
+
+  .pay-and-feed .wrapper {
+    padding: 0;
+  }
+
+  .card-description {
+    margin: 20px 20px 0 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .care-animals-block .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .zoo-content {
+    flex-wrap: wrap;
+  }
+
+  footer .wrapper-md {
+    width: 1120px;
+    padding: 0;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 0;
+    padding: 21px 34px 23px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 6px;
+  }
+
+  .bottom-nav > ul {
+    width: 347px;
+  }
+
+  .copiright-block .social-list > li {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1450px) {
+  .care-animals-block .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+    width: 100%;
+  }
+
+  .cards-block {
+    margin-top: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+  }
+
+  .cards-block > div {
+    display: contents;
+  }
+
+  .big-card img {
+    width: 930px;
+    height: 470px;
+    transform: scale(-1, 1);
+  }
+
+  .care-animals-block .animal-card img,
+  .care-animals-block .card-tiger img {
+    width: 455px;
+    height: 373px;
+  }
+
+  .big-card {
+    margin: 20px 0;
+  }
+
+  .card-tiger {
+    margin: 10px 20px 0 0;
+    order: 2;
+  }
+
+  .care-animals-block .animal-card.card-eagles {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0 20px 10px 0;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 268px;
+    padding-bottom: 76px;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 84px;
+  }
+
+  .online-zoo-img > img {
+    width: 100%;
+    height: 668px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* repeat style */
+
+  .wrapper {
+    width: 1000px;
+  }
+
+  .wrapper-md {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+  header,
+  .block-flex {
+    padding: 30px 0 30px;
+  }
+
+  .logo-header {
+    width: 1px;
+    height: 1px;
+  }
+
+  .top-menu__list__items {
+    margin-left: 30px;
+  }
+
+  .social-list > li {
+    margin-left: 30px;
+    transition: filter, transform 0.3s linear;
+  }
+
+  .social-list > li.youtube {
+    margin-left: 80px;
+  }
+
+  /* Watch your favorite animal online */
+
+  .favorite-animal {
+    background-position: center;
+    padding: 109px 0 100px 0;
+  }
+
+  .baner {
+    margin-top: -12px;
+  }
+
+  .baner-top-text {
+    font-weight: 800;
+    font-size: 82px;
+    letter-spacing: 0.01em;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+
+  .baner-sub-text {
+    width: 340px;
+    margin-top: 11px;
+  }
+
+  .buner-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    padding: 27px 65px 28px 29px;
+    background: #f58021;
+    border-radius: 5px;
+    transition: background 0.3s linear;
+    margin-top: 25px;
+    display: inline-block;
+  }
+
+  .buner-btn:after {
+    content: "";
+    position: absolute;
+    background: url("assets/icons/Union.svg");
+    width: 26px;
+    height: 22px;
+    top: 24px;
+    left: 185px;
+  }
+
+  .buner-btn:hover,
+  .link-block:hover .link-to-map {
+    background: #d26004;
+    box-shadow: 0px 4px 30px rgba(245, 128, 33, 0.3);
+    transition: background 0.3s linear;
+  }
+
+  /* Welcome to the Online Zoo */
+
+  .zoo-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .content-margin {
+    margin-top: 100px;
+  }
+
+  .zoo-img > img {
+    width: 660px;
+    height: 438px;
+  }
+
+  .text-margin,
+  .zoo-text {
+    margin: 30px 0 0 0;
+    width: 560px;
+  }
+
+  .zoo-text {
+    margin-right: 103px;
+  }
+
+  .zoo-margin {
+    flex-direction: column;
+    margin: 70px 0 100px;
+    align-items: flex-end;
+  }
+
+  .zoo-sub-text {
+    margin-top: 30px;
+  }
+
+  /* Your donation makes a difference */
+
+  .block-flex {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .block-donation,
+  .pay-and-feed {
+    padding: 50px 0 152px;
+  }
+
+  .donation-text {
+    width: 577px;
+  }
+
+  .donation-subtext,
+  .card-text {
+    width: 577px;
+    margin-top: 30px;
+  }
+
+  /* meet some our Pets */
+
+  .pets {
+    padding: 100px 0 38px;
+  }
+
+  .wrapper-center {
+    margin-top: 0;
+    width: 830px;
+  }
+
+  .pets-text-style {
+    margin-left: 90px;
+  }
+
+  .pets-subtext {
+    color: black;
+    margin-top: 30px;
+  }
+
+  .carousel-block {
+    margin: 100px auto 113px;
+    width: 100%;
+  }
+
+  .pets .cards img {
+    width: 455px;
+    height: 436px;
+  }
+
+  .cards {
+    margin-top: 20px;
+    width: 1160px;
+  }
+
+  .animal-card {
+    margin: 10px 8px;
+  }
+
+  .animal-card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    background: #20113d;
+    padding: 16px 0 59px 0;
+    min-height: 280px;
+  }
+
+  .card-text {
+    width: 366px;
+    margin: 17px auto 0;
+  }
+
+  .carousel-block .card-panda .card-text {
+    white-space: normal;
+    margin-top: 17px;
+  }
+
+  .animal-name {
+    border-radius: 5px 0px;
+    padding: 15px 26px;
+  }
+
+  .cards-btn {
+    margin-top: 24px;
+  }
+
+  /* PAY AND FEED */
+
+  .pay-and-feed {
+    padding: 150px 0 100px;
+  }
+
+  .pay-and-feed .wrapper {
+    width: 1120px;
+  }
+
+  .pay-and-feed .pets-text-style {
+    margin-left: 60px;
+  }
+
+  .card-info {
+    margin-top: 106px;
+  }
+
+  .card-banana {
+    margin-top: 84px;
+  }
+
+  .card-monkey-banana {
+    margin-top: 77px;
+  }
+
+  .card-banana .card-info {
+    margin-top: 63px;
+  }
+
+  .card-monkey-banana .card-info {
+    margin-top: 62px;
+  }
+
+  .card-img > img {
+    width: 550px;
+    height: 358px;
+  }
+
+  .card-description {
+    text-align: center;
+    margin: 0 0 0 0;
+    width: 549px;
+  }
+
+  .card-description:before {
+    top: -45px;
+    left: 219px;
+  }
+
+  .icon-card:before {
+    top: 23px;
+    left: 222px;
+  }
+
+  .icon-food:before {
+    top: 17px;
+    left: 233px;
+  }
+
+  .card-description .animal-type {
+    margin-top: 67px;
+  }
+
+  .icon-food .animal-type {
+    width: 540px;
+    margin-top: 129px;
+  }
+
+  .icon-card .animal-type {
+    margin-top: 135px;
+  }
+
+  .card-description .card-text {
+    margin: 30px 0 0;
+  }
+
+  .pay-btn {
+    margin-top: 126px;
+    margin-right: 280px;
+    padding: 27px 85px 28px 46px;
+  }
+
+  .pay-btn:after {
+    left: 192px;
+  }
+
+  /* what our users think */
+
+  .reviews-block .wrapper {
+    width: 930px;
+  }
+
+  .reviews-block {
+    margin-top: -1px;
+    background-position: inherit;
+    padding-top: 102px;
+  }
+
+  .reviews-block > .cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+
+  .reviews-block > .cards:after {
+    width: 0;
+  }
+
+  .carousel {
+    margin: 44px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .reviews-text {
+    width: 577px;
+    margin-left: 40px;
+  }
+
+  .reviews-text > .pets-text-style {
+    margin-top: 0;
+  }
+
+  .reviews-text > .animal-type {
+    margin-top: 19px;
+  }
+
+  .reviews-block .carousel-arrow {
+    margin: 85px 40px 0 auto;
+    width: 180px;
+  }
+
+  .reviews-block .cards-btn {
+    margin-top: 98px;
+  }
+
+  /* care for the animals you love */
+
+  .care-animals-block .wrapper {
+    width: 930px;
+    margin: 0 auto;
+  }
+
+  .care-animals-block .pets-text-style {
+    margin: 0 152px 0 auto;
+  }
+
+  .care-animals-block {
+    padding: 150px 0 147px;
+  }
+
+  .care-animals-block .pets-subtext {
+    margin: 30px 0px 0 257px;
+  }
+
+  .cards-block {
+    margin-top: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+  }
+
+  .cards-block > div {
+    display: contents;
+  }
+
+  .big-card img {
+    width: 930px;
+    height: 470px;
+    transform: scale(-1, 1);
+  }
+
+  .care-animals-block .animal-card img,
+  .care-animals-block .card-tiger img {
+    width: 455px;
+    height: 373px;
+  }
+
+  .big-card {
+    margin: 20px 0;
+  }
+
+  .card-tiger {
+    margin: 10px 20px 0 0;
+    order: 2;
+  }
+
+  .care-animals-block .animal-card.card-eagles {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0 20px 10px 0;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 268px;
+    padding-bottom: 76px;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 84px;
+  }
+
+  .online-zoo-img > img {
+    width: 100%;
+    height: 668px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 74px 0 43px;
+    background: #20113d linear-gradient(180deg, white 22%, transparent 28%);
+    background-position: 0% 64%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+  }
+
+  footer .wrapper-md {
+    width: 1120px;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 0;
+    padding: 21px 34px 23px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 6px;
+  }
+
+  .bottom-nav > ul {
+    width: 347px;
+  }
+
+  .copiright-block .social-list > li {
+    margin-left: 0;
+  }
+
+  .copiright-block {
+    margin-top: 68px;
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1199px) {
+  .wrapper {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .nav-block .social {
+    display: none;
+  }
+
+  .online-zoo {
+    margin-bottom: 50px;
+  }
+
+  .online-zoo .wrapper {
+    padding: 0;
+  }
+
+  .online-zoo .zoo-block {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .zoo-img img {
+    width: 630px;
+  }
+
+  .block-flex {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .block-donation,
+  .pay-and-feed {
+    padding: 0px 0 345px;
+  }
+
+  .donation-subtext,
+  .card-text {
+    width: 578px;
+    margin-top: 30px;
+  }
+
+  .donation-form {
+    margin-top: 30px;
+  }
+
+  .number {
+    padding: 25px 70px 25px 57px;
+    right: 23px;
+    width: 365px;
+  }
+
+  .submit {
+    padding: 0 37px;
+    right: 98px;
+  }
+
+  .submit:after {
+    left: 25px;
+  }
+
+  .carousel > div {
+    flex-wrap: wrap;
+  }
+
+  .baner-text {
+    width: 100%;
+  }
+
+  .zoo-margin {
+    margin: 50px 0 0;
+    align-items: flex-start;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .card-koala .card-text {
+    width: 350px;
+    margin: 30px auto 0;
+  }
+
+  .pay-and-feed {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .pay-and-feed .wrapper {
+    max-width: 640px;
+    padding: 0;
+  }
+
+  .pay-and-feed .pets-text-style {
+    margin: 0 auto 0 74px;
+  }
+
+  .number-cards {
+    text-align: left;
+    margin: 0 20px;
+    background-size: 93.5% 1px;
+  }
+
+  .pay-and-feed .pay-cards {
+    margin-top: 50px;
+  }
+
+  .pay-and-feed .card-info {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .card-img > img {
+    width: 640px;
+    height: 417px;
+  }
+
+  .card-description {
+    margin: 160px 20px 0;
+    width: 600px;
+  }
+
+  .card-description:before {
+    top: -112px;
+    left: 246px;
+  }
+
+  .icon-card:before {
+    top: -117px;
+    left: 250px;
+  }
+
+  .icon-food:before {
+    top: -116px;
+    left: 260px;
+  }
+
+  .card-description .animal-type,
+  .icon-card .animal-type,
+  .icon-food .animal-type {
+    margin-top: 0;
+  }
+
+  .icon-food .animal-type {
+    width: 600px;
+  }
+
+  .card-description .card-text {
+    margin: 30px 0 0;
+  }
+
+  .pay-btn {
+    margin-top: 51px;
+    margin-right: 0;
+    padding: 30px 96px 28px 58px;
+  }
+
+  .pay-btn:after {
+    left: 205px;
+    top: 27px;
+  }
+
+  .care-animals-block .wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .care-animals-block .pets-text-style {
+    margin: 0 12px 0 auto;
+  }
+
+  .care-animals-block {
+    padding: 80px 0 96px;
+  }
+
+  .care-animals-block .pets-subtext {
+    margin: 33px 0 0;
+    width: 100%;
+  }
+
+  .cards-block {
+    margin-top: 70px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .cards-block > div {
+    display: block;
+  }
+
+  .care-animals-block .animal-card img,
+  .care-animals-block .card-tiger img {
+    width: 300px;
+    height: 295px;
+  }
+
+  .care-animals-block .card-panda,
+  .care-animals-block .panda-640,
+  .care-animals-block .card-lemur,
+  .care-animals-block .card-tiger,
+  .care-animals-block .card-eagles {
+    display: flex;
+  }
+
+  .care-animals-block .bottom-cards {
+    display: flex;
+  }
+
+  .big-card,
+  .care-animals-block .panda-img {
+    display: none;
+  }
+
+  .card-tiger {
+    margin: 0 0 0 10px;
+    order: 0;
+  }
+
+  .care-animals-block .animal-card.card-eagles {
+    order: 0;
+    margin-top: 0;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0 1px 0 0;
+    width: inherit;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 295px;
+    padding: 66px 20px 60px;
+  }
+
+  .care-animals-block .card-text {
+    width: 260px;
+    white-space: inherit;
+    margin-top: 0;
+  }
+
+  .care-animals-block .card-content {
+    margin-top: 0;
+    margin-left: -1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+
+  .care-animals-block .animal-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 50px;
+    padding: 20px 37px 25px 36px;
+  }
+
+  .online-zoo-img {
+    margin-top: 100px;
+  }
+
+  .reviews-block .wrapper {
+    width: 100%;
+  }
+
+  .online-zoo-img > img {
+    width: 100%;
+    height: 379px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px;
+    background-position: 0% 64%;
+  }
+
+  footer .wrapper-md {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 445px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 53px 0 0 0;
+    padding: 21px 34px 23px 34px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 0;
+    margin-top: 50px;
+  }
+
+  .bottom-nav > ul {
+    width: 445px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .copiright-block {
+    margin-top: 98px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright-block .social-list {
+    width: 220px;
+  }
+
+  .copiright {
+    margin-top: 36px;
+    width: 442px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* repeat style */
+
+  .wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  /* HEADER */
+
+  .header-bg {
+    position: fixed;
+  }
+
+  header {
+    padding: 30px 0 27px;
+  }
+
+  .top-meny {
+    margin-top: 11px;
+  }
+
+  .top-menu__list__items {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .top-menu__list__items > a {
+    color: white;
+  }
+
+  .top-menu__list__items_active > a {
+    color: #00a092;
+    cursor: default;
+  }
+
+  .nav-block {
+    position: relative;
+  }
+
+  #menu__toggle {
+    display: block;
+    opacity: 0;
+    width: 23px;
+  }
+
+  .menu__btn {
+    top: 6px;
+    right: 27px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+  .menu__btn > span::before {
+    content: "";
+    top: -14px;
+  }
+
+  .menu__btn > span::after {
+    content: "";
+    top: 14px;
+  }
+
+  .nav-block .top-menu__list {
+    display: block;
+    text-align: center;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    background: #20113d;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(405deg);
+    background-color: white;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(450deg);
+    background-color: white;
+  }
+
+  #menu__toggle:checked ~ .top-menu__list {
+    visibility: visible;
+    left: 50%;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::after,
+  .nav-block .top-menu__list {
+    transition-duration: 0.7s;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .non-scroll {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Watch your favorite animal online */
+
+  .favorite-animal {
+    background-position: bottom;
+    background-size: 130%;
+    padding: 161px 0 50px 0;
+  }
+
+  .baner {
+    margin-top: 0;
+  }
+
+  .baner-text {
+    width: 100%;
+  }
+
+  .baner-top-text {
+    width: 600px;
+    font-size: 72px;
+    line-height: 88px;
+  }
+
+  .buner-btn {
+    padding: 27px 87px 28px 51px;
+  }
+
+  .buner-btn:after {
+    left: 210px;
+  }
+
+  /* Welcome to the Online Zoo */
+
+  .online-zoo {
+    padding: 0 0 100px;
+  }
+
+  .online-zoo .wrapper {
+    max-width: 100%;
+  }
+
+  .zoo-img > img {
+    width: 640px;
+    height: 438px;
+  }
+
+  .zoo-text {
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+    width: 600px;
+  }
+
+  .zoo-margin {
+    margin: 46px 0 0;
+    align-items: flex-start;
+  }
+
+  .zoo-margin .zoo-img > img {
+    height: 423px;
+  }
+
+  .zoo-sub-text {
+    margin-top: 30px;
+    width: 600px;
+  }
+
+  /* Your donation makes a difference */
+
+  .block-donation {
+    padding: 50px 0 297px;
+  }
+
+  .block-flex {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donation-subtext,
+  .card-text {
+    width: 578px;
+    margin-top: 30px;
+  }
+
+  .donation-form {
+    margin-top: 30px;
+  }
+
+  .number {
+    padding: 25px 70px 25px 57px;
+    right: 23px;
+    width: 365px;
+  }
+
+  .submit {
+    padding: 0 37px;
+    right: 98px;
+  }
+
+  .submit:after {
+    left: 25px;
+  }
+
+  /* meet some our Pets */
+
+  .pets {
+    padding: 100px 0 100px;
+  }
+
+  .wrapper-sm {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .pets-text-style {
+    margin: 0 auto;
+    width: 470px;
+  }
+
+  .carousel-block {
+    margin: 53px auto 0;
+    width: 100%;
+  }
+
+  .card-panda,
+  .card-lemur,
+  .card-gorilla,
+  .card-krokodile,
+  .card-eagle,
+  .koala-img,
+  .carousel-arrow,
+  .lion-img {
+    display: none;
+  }
+
+  .lion-640,
+  .koala-640 {
+    display: block;
+  }
+
+  .pets .cards img {
+    width: 290px;
+    height: 333px;
+  }
+
+  .cards {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .animal-card {
+    margin: 0;
+    width: 290px;
+  }
+
+  .card-koala {
+    margin-right: 20px;
+  }
+
+  .card-content {
+    padding: 21px 25px 35px 25px;
+    min-height: 272px;
+  }
+
+  .card-text,
+  .card-lion .card-text {
+    width: 241px;
+    margin: 8px auto 0;
+  }
+
+  .animal-name {
+    padding: 13px 26px;
+  }
+
+  .cards-btn {
+    margin-top: 8px;
+    padding: 20px 31px 25px 30px;
+  }
+
+  .link-to-map {
+    padding: 20px 20px;
+  }
+
+  /* PAY AND FEED */
+
+  .pay-and-feed {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .pay-and-feed .wrapper {
+    max-width: 640px;
+  }
+
+  .pay-and-feed .pets-text-style {
+    margin: 0 auto 0 74px;
+  }
+
+  .number-cards {
+    text-align: left;
+    margin: 0 20px;
+    background-size: 93.5% 1px;
+  }
+
+  .pay-and-feed .pay-cards {
+    margin-top: 50px;
+  }
+
+  .pay-and-feed .card-info {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .card-img > img {
+    width: 640px;
+    height: 417px;
+  }
+
+  .card-description {
+    margin: 160px 20px 0;
+    width: 600px;
+  }
+
+  .card-description:before {
+    top: -112px;
+    left: 246px;
+  }
+
+  .icon-card:before {
+    top: -117px;
+    left: 250px;
+  }
+
+  .icon-food:before {
+    top: -116px;
+    left: 260px;
+  }
+
+  .card-description .animal-type,
+  .icon-card .animal-type,
+  .icon-food .animal-type {
+    margin-top: 0;
+  }
+
+  .icon-food .animal-type {
+    width: 600px;
+  }
+
+  .card-description .card-text {
+    margin: 30px 0 0;
+  }
+
+  .pay-btn {
+    margin-top: 51px;
+    margin-right: 0;
+    padding: 30px 96px 28px 58px;
+  }
+
+  .pay-btn:after {
+    left: 205px;
+    top: 27px;
+  }
+
+  /* what our users think */
+
+  .reviews-block .wrapper {
+    width: 100%;
+  }
+
+  .reviews-block {
+    background-color: #20113d;
+    margin-top: -2px;
+    background-position: 0px 569px;
+    background-size: 226% 73%;
+    background-repeat: no-repeat;
+    padding: 80px 0 753px;
+  }
+
+  .reviews-block > .cards {
+    width: 96.9%;
+    margin: 0 0 0 20px;
+  }
+
+  .carousel {
+    margin: 62px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .bottom-bloquotes {
+    display: none;
+  }
+
+  .reviews-text {
+    margin-left: 0;
+  }
+
+  .reviews-block .cards-btn {
+    margin-top: -7px;
+    padding: 20px 86px 24px 80px;
+  }
+
+  .bloquotes {
+    margin: 0 20px 0 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 30px;
+    position: relative;
+    width: 523px;
+    height: 371px;
+  }
+
+  .bloquotes:before {
+    top: 45px;
+    left: 35px;
+  }
+
+  .bloquotes .animal-type {
+    margin: 0 auto 0;
+    width: 214px;
+  }
+
+  .bloquotes .card-text {
+    margin: 30px 0 0;
+    width: 100%;
+  }
+
+  .bloquotes .link-to-map {
+    margin-top: 43px;
+  }
+
+  /* care for the animals you love */
+
+  .care-animals-block .wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .care-animals-block .pets-text-style {
+    margin: 0 12px 0 auto;
+  }
+
+  .care-animals-block {
+    padding: 80px 0 96px;
+  }
+
+  .care-animals-block .pets-subtext {
+    margin: 33px 0 0;
+    width: 100%;
+  }
+
+  .cards-block {
+    margin-top: 70px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .cards-block > div {
+    display: block;
+  }
+
+  .care-animals-block .animal-card img,
+  .care-animals-block .card-tiger img {
+    width: 300px;
+    height: 295px;
+  }
+
+  .care-animals-block .card-panda,
+  .care-animals-block .panda-640,
+  .care-animals-block .card-lemur,
+  .care-animals-block .card-tiger,
+  .care-animals-block .card-eagles {
+    display: flex;
+  }
+
+  .care-animals-block .bottom-cards {
+    display: flex;
+  }
+
+  .big-card,
+  .care-animals-block .panda-img {
+    display: none;
+  }
+
+  .card-tiger {
+    margin: 0 0 0 10px;
+    order: 0;
+  }
+
+  .care-animals-block .animal-card.card-eagles {
+    order: 0;
+    margin-top: 0;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0 1px 0 0;
+    width: inherit;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 295px;
+    padding: 66px 20px 60px;
+  }
+
+  .care-animals-block .card-text {
+    width: 260px;
+    white-space: inherit;
+    margin-top: 0;
+  }
+
+  .care-animals-block .card-content {
+    margin-top: 0;
+    margin-left: -1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+
+  .care-animals-block .animal-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  .slider-dots {
+    width: 92px;
+    margin: 48px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dot {
+    border: 1px solid #000000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .active-dot {
+    background: #000000;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 50px;
+    padding: 20px 37px 25px 36px;
+  }
+
+  .online-zoo-img {
+    margin-top: 100px;
+  }
+
+  .online-zoo-img > img {
+    width: 100%;
+    height: 379px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px;
+    background-position: 0% 64%;
+  }
+
+  footer .wrapper-md {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 445px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 53px 0 0 0;
+    padding: 21px 34px 23px 34px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 0;
+    margin-top: 50px;
+  }
+
+  .bottom-nav > ul {
+    width: 445px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .copiright-block {
+    margin-top: 98px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright-block .social-list {
+    width: 220px;
+  }
+
+  .copiright {
+    margin-top: 36px;
+    width: 442px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 639px) {
+  .baner-top-text,
+  .zoo-text,
+  .zoo-sub-text,
+  .pay-and-feed .wrapper,
+  .card-description,
+  .card-description .animal-type,
+  .card-description .card-text,
+  .pets .pets-text-style {
+    width: 100%;
+  }
+
+  .baner-top-text {
+    font-size: 62px;
+    line-height: 120%;
+  }
+
+  .zoo-img img,
+  .card-img > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .donation-text {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .donation-subtext,
+  .card-text {
+    width: inherit;
+    margin-top: 27px;
+  }
+
+  .block-donation,
+  .pay-and-feed {
+    padding: 30px 0 215px;
+  }
+
+  .donation-form {
+    margin-top: 30px;
+  }
+
+  .number {
+    padding: 11px 78px 11px 40px;
+    left: 10px;
+    width: 300px;
+  }
+
+  .submit {
+    padding: 0 30px;
+    right: 51px;
+    height: 44px;
+  }
+
+  .dollar {
+    font-size: 16px;
+    left: 36px;
+    top: 13px;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  .submit:after {
+    left: 18px;
+    top: 12px;
+  }
+
+  .carousel > div {
+    flex-wrap: wrap;
+  }
+
+  .baner-text {
+    width: 100%;
+  }
+
+  .zoo-margin {
+    margin: 50px 0 0;
+    align-items: flex-start;
+  }
+
+  .pay-and-feed .pets-text-style {
+    margin: 0;
+    width: 100%;
+  }
+
+  .pay-and-feed .card-info {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .card-description {
+    margin: 160px 0 0;
+  }
+
+  .card-description:before {
+    left: 40%;
+  }
+
+  .cards-block {
+    margin-top: 70px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .big-card,
+  .care-animals-block .panda-img {
+    display: none;
+  }
+
+  /* what our users think */
+
+  .reviews-block .wrapper {
+    width: 100%;
+  }
+
+  .reviews-block {
+    margin-top: 0;
+    background-position: 0% 100%;
+    background-size: 177% 37%;
+    padding: 40px 0 450px;
+  }
+
+  .reviews-block > .cards {
+    width: 100%;
+    margin: 0;
+  }
+
+  .carousel {
+    margin: 39px 0 0 0;
+    justify-content: center;
+  }
+
+  .reviews-text {
+    margin-left: 0;
+    width: inherit;
+    text-align: center;
+  }
+
+  .reviews-text > .pets-text-style {
+    width: 100%;
+  }
+
+  .reviews-text > .animal-type {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 8px;
+    margin-top: 24px;
+  }
+
+  .bloquotes {
+    margin: 0;
+    justify-content: space-between;
+    padding: 116px 20px 50px 20px;
+    width: 300px;
+    min-height: 549px;
+  }
+
+  .bloquotes:before {
+    top: 46px;
+  }
+
+  .bloquotes-margin {
+    display: none;
+  }
+
+  .bloquotes .card-text {
+    margin: 20px 0 0;
+  }
+
+  .bloquotes .link-to-map {
+    margin-top: 57px;
+  }
+
+  .reviews-block .slider-dots {
+    margin: 30px auto 0;
+  }
+
+  .reviews-block .slider-dots .dot {
+    border: 1px solid white;
+  }
+
+  .reviews-block .slider-dots .active-dot {
+    background: white;
+  }
+
+  .reviews-block .cards-btn {
+    padding: 7px 41px 8px 47px;
+    width: 300px;
+    margin: 50px 10px 0 10px;
+  }
+
+  /* care for the animals you love */
+
+  .care-animals-block {
+    padding: 50px 0 77px;
+  }
+
+  .care-animals-block .pets-text-style {
+    margin: 0;
+    width: 100%;
+  }
+
+  .care-animals-block .pets-subtext {
+    margin: 27px 0 0;
+    padding: 0 14px;
+  }
+
+  .care-animals-block .card-text {
+    width: 240px;
+  }
+
+  .cards-block {
+    margin: 25px auto 0;
+    width: 300px;
+  }
+
+  .care-animals-block .animal-card img {
+    width: 300px;
+    height: 353px;
+  }
+
+  .care-animals-block .card-panda,
+  .care-animals-block .panda-640 {
+    display: block;
+  }
+
+  .care-animals-block .animal-card.card-eagles,
+  .card-tiger,
+  .care-animals-block .card-lemur,
+  .care-animals-block .card-tiger,
+  .care-animals-block .card-eagles {
+    display: none;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 218px;
+    padding: 15px 20px 46px;
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .care-animals-block .animal-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider-dots {
+    margin: 30px auto 0;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 50px;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .online-zoo-img {
+    margin-top: 80px;
+  }
+
+  .online-zoo-img > img {
+    height: 189px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px 0 77px;
+    background-position: 0% 67%;
+    background-size: 100% 6px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logos-icons .logo-footer {
+    margin-top: 0;
+  }
+
+  .logos-icons li {
+    margin-top: 27px;
+  }
+
+  .bottom-nav {
+    margin-top: 29px;
+  }
+
+  .bottom-nav > ul {
+    width: 300px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .bottom-nav .top-menu__list__items > a {
+    font-size: 16px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 33px 0 0 0;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .copiright-block {
+    margin-top: 28px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright {
+    margin-top: 65px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copiright li:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* repeat style */
+
+  .wrapper {
+    max-width: 300px;
+  }
+
+  .text-hidden {
+    display: none;
+  }
+
+  /* HEADER */
+
+  header {
+    padding: 30px 0 26px 10px;
+  }
+
+  .top-menu__list__items {
+    margin-top: 40px;
+  }
+
+  .menu__btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .nav-block .top-menu__list {
+    width: 100%;
+  }
+
+  #menu__toggle:checked ~ .top-menu__list {
+    left: 0%;
+  }
+
+  /* Watch your favorite animal online */
+
+  .favorite-animal {
+    background-position: 84% 100%;
+    background-size: 192%;
+    padding: 130px 0 279px 0;
+  }
+
+  .baner-text {
+    width: inherit;
+  }
+
+  .baner-top-text {
+    width: 100%;
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .baner-sub-text {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .buner-btn {
+    margin-top: 27px;
+    padding: 12px 94px 14px 60px;
+  }
+
+  .buner-btn:after {
+    left: 215px;
+    top: 11px;
+  }
+
+  /* Welcome to the Online Zoo */
+
+  .online-zoo {
+    padding: 50px 0;
+  }
+
+  .content-margin {
+    margin-top: 0;
+  }
+
+  .zoo-img > img {
+    width: 320px;
+    height: 218px;
+  }
+
+  .zoo-text {
+    margin: 29px 0 0 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .zoo-text-style,
+  .pets-text-style {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+
+  .zoo-margin {
+    margin: 45px 0 0;
+  }
+
+  .zoo-margin .zoo-img > img {
+    height: 213px;
+  }
+
+  .zoo-margin .zoo-sub-text {
+    margin-top: 23px;
+  }
+
+  .zoo-sub-text {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  /* Your donation makes a difference */
+
+  .donation-text {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .donation-subtext,
+  .card-text {
+    width: inherit;
+    margin-top: 27px;
+  }
+
+  .block-donation,
+  .pay-and-feed {
+    padding: 30px 0 304px;
+  }
+
+  .donation-form {
+    margin-top: 30px;
+  }
+
+  .number {
+    padding: 11px 78px 11px 40px;
+    left: 10px;
+    width: 300px;
+  }
+
+  .submit {
+    padding: 0 30px;
+    right: 51px;
+    height: 44px;
+  }
+
+  .dollar {
+    font-size: 16px;
+    left: 36px;
+    top: 13px;
+  }
+
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  .submit:after {
+    left: 18px;
+    top: 12px;
+  }
+
+  /* meet some our Pets */
+
+  .pets {
+    padding: 50px 0 10px;
+  }
+
+  .wrapper-sm {
+    max-width: 300px;
+  }
+
+  .pets-text-style {
+    margin-left: -10px;
+    width: 320px;
+  }
+
+  .pets-subtext {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .carousel-block {
+    margin: 23px auto 0;
+  }
+
+  .pets .cards img {
+    width: 300px;
+  }
+
+  .animal-card {
+    width: 300px;
+  }
+
+  .animal-name {
+    padding: 13px 26px 13px 29px;
+  }
+
+  .card-lion {
+    display: none;
+  }
+
+  .card-koala {
+    margin-right: 0;
+  }
+
+  .card-content {
+    padding: 19px 24px 34px 25px;
+    min-height: 270px;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .link-to-map {
+    padding: 11px 25px;
+  }
+
+  /* PAY AND FEED */
+
+  .pay-and-feed {
+    margin-top: 55px;
+    padding: 20px 0 50px;
+  }
+
+  .pay-and-feed .wrapper {
+    max-width: 320px;
+  }
+
+  .pay-and-feed .pay-cards {
+    margin-top: 44px;
+  }
+
+  .pay-and-feed .pets-text-style {
+    margin: 0;
+  }
+
+  .number-cards {
+    margin: 0 0 0 10px;
+    background-size: 87.5% 1px;
+  }
+
+  .pay-and-feed .card-info {
+    margin-top: 30px;
+  }
+
+  .pay-and-feed .card-monkey-banana {
+    margin-top: 47px;
+  }
+
+  .card-img > img {
+    width: 320px;
+    height: 208px;
+  }
+
+  .card-description {
+    margin: 140px 10px 0;
+    width: 300px;
+  }
+
+  .card-description:before {
+    top: -112px;
+    left: 97px;
+  }
+
+  .icon-card:before {
+    top: -112px;
+    left: 100px;
+  }
+
+  .icon-food:before {
+    top: -109px;
+    left: 111px;
+  }
+
+  .icon-food .animal-type {
+    width: 100%;
+  }
+
+  .card-description .card-text {
+    margin: 30px 0 0;
+    padding: 0 8px;
+  }
+
+  .icon-card .card-text,
+  .icon-food .card-text {
+    padding: 0;
+  }
+
+  .pay-btn {
+    margin-top: 43px;
+    padding: 13px 98px 13px 66px;
+  }
+
+  .pay-btn:after {
+    top: 10px;
+    left: 210px;
+  }
+
+  /* what our users think */
+
+  .reviews-block .wrapper {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .reviews-block {
+    margin-top: 0;
+    background-position: 0% 100%;
+    background-size: 177% 37%;
+    padding: 40px 0 450px;
+  }
+
+  .reviews-block > .cards {
+    width: 300px;
+    margin: 0 10px;
+  }
+
+  .carousel {
+    margin: 39px 0 0 0;
+  }
+
+  .reviews-text {
+    margin-left: 0;
+    width: inherit;
+    text-align: center;
+  }
+
+  .reviews-text > .pets-text-style {
+    width: 100%;
+  }
+
+  .reviews-text > .animal-type {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 8px;
+    margin-top: 24px;
+  }
+
+  .bloquotes {
+    margin: 0;
+    justify-content: space-between;
+    padding: 116px 20px 50px 20px;
+    width: 300px;
+    min-height: 549px;
+  }
+
+  .bloquotes:before {
+    top: 46px;
+  }
+
+  .bloquotes .card-text {
+    margin: 20px 0 0;
+  }
+
+  .bloquotes .link-to-map {
+    margin-top: 57px;
+  }
+
+  .reviews-block .slider-dots {
+    margin: 30px auto 0;
+  }
+
+  .reviews-block .slider-dots .dot {
+    border: 1px solid white;
+  }
+
+  .reviews-block .slider-dots .active-dot {
+    background: white;
+  }
+
+  .reviews-block .cards-btn {
+    padding: 7px 41px 8px 47px;
+    width: 300px;
+    margin: 50px 10px 0 10px;
+  }
+
+  /* care for the animals you love */
+
+  .care-animals-block {
+    padding: 50px 0 77px;
+  }
+
+  .care-animals-block .pets-text-style {
+    margin: 0;
+    width: 100%;
+  }
+
+  .care-animals-block .pets-subtext {
+    margin: 27px 0 0;
+    padding: 0 14px;
+  }
+
+  .care-animals-block .card-text {
+    width: 240px;
+  }
+
+  .cards-block {
+    margin-top: 25px;
+    width: 300px;
+  }
+
+  .care-animals-block .animal-card img {
+    width: 300px;
+    height: 353px;
+  }
+
+  .care-animals-block .card-panda,
+  .care-animals-block .panda-640 {
+    display: block;
+  }
+
+  .care-animals-block .animal-card.card-eagles,
+  .card-tiger,
+  .care-animals-block .card-lemur,
+  .care-animals-block .card-tiger,
+  .care-animals-block .card-eagles {
+    display: none;
+  }
+
+  .care-animals-block .animal-card {
+    margin: 0;
+  }
+
+  .care-animals-block .card-content {
+    min-height: 218px;
+    padding: 15px 20px 46px;
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .care-animals-block .animal-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider-dots {
+    margin: 30px auto 0;
+  }
+
+  .care-animals-block .cards-btn {
+    margin-top: 50px;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .online-zoo-img {
+    margin-top: 80px;
+  }
+
+  .online-zoo-img > img {
+    height: 189px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px 0 77px;
+    background-position: 0% 67%;
+    background-size: 100% 6px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logos-icons .logo-footer {
+    margin-top: 0;
+  }
+
+  .logos-icons li {
+    margin-top: 27px;
+  }
+
+  .bottom-nav {
+    margin-top: 29px;
+  }
+
+  .bottom-nav > ul {
+    width: 300px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .bottom-nav .top-menu__list__items > a {
+    font-size: 16px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 33px 0 0 0;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .copiright-block {
+    margin-top: 28px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright {
+    margin-top: 65px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copiright li:not(:first-child) {
+    margin-top: 40px;
+  }
+}

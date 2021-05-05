@@ -1,0 +1,1700 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap");
+
+/* reset css */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+a,
+img,
+ul,
+li,
+label,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer,
+header,
+nav {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ul {
+  list-style: none;
+}
+
+/* repeat style */
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.full-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background-color: #f58021;
+  position: relative;
+  z-index: 5;
+}
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #00a092;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 109px;
+}
+
+.nav-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.logo-header {
+  font-size: 1px;
+  opacity: 0;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.top-menu__list {
+  display: flex;
+}
+
+.top-menu__list__items {
+  margin-left: 49px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.top-menu__list__items > a {
+  transition: color 0.3s linear;
+}
+
+.top-menu__list__items_active > a {
+  color: #00a092;
+  cursor: default;
+}
+
+.top-menu__list__items:hover > a {
+  color: #00a092;
+  transition: color 0.3s linear;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list > li {
+  margin-left: 30px;
+  transition: filter, transform 0.3s linear;
+}
+
+.social-list > li.youtube {
+  margin-left: 67px;
+}
+
+.social-list > li:hover {
+  filter: grayscale(70%);
+  transform: scale(1.1);
+  transition: filter, transform 0.3s linear;
+}
+
+.social-list > li > a {
+  padding: 0 20px 21px;
+  cursor: pointer;
+}
+
+.youtube {
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/icons/css_sprites.png") 0 -40px;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/icons/css_sprites.png") -40px 0;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/icons/css_sprites.png") 0 0;
+}
+
+/* find where are the animals live */
+
+.map-heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 54px;
+  text-transform: uppercase;
+  line-height: 66px;
+  color: #20113d;
+  white-space: pre-line;
+}
+
+.map {
+  position: relative;
+  background: url("../../assets/images/Map.png");
+  background-repeat: no-repeat;
+  background-position-x: -6px;
+  margin: 69px auto 149px;
+  height: 912px;
+}
+
+.map-heading {
+  margin-top: -27px;
+}
+
+.icons {
+  position: absolute;
+}
+
+.icon-eagles {
+  top: 368px;
+  left: 126px;
+}
+
+.filter {
+  filter: drop-shadow(0px 4px 8px rgba(245, 128, 33, 0.7));
+}
+
+.icon-aligator {
+  top: 389px;
+  left: 262px;
+}
+
+.icon-lion {
+  top: 437px;
+  left: 547px;
+}
+
+.shadow {
+  filter: drop-shadow(-1px 1px 7px rgba(0, 0, 0, 12));
+}
+
+.icon-gorilla {
+  top: 451px;
+  left: 654px;
+}
+
+.icon-lemur {
+  top: 571px;
+  left: 756px;
+}
+
+.icon-panda {
+  top: 325px;
+  left: 913px;
+}
+
+.icon-tiger {
+  top: 492px;
+  left: 986px;
+}
+
+.icon-koala {
+  top: 605px;
+  left: 1117px;
+}
+
+.icon-hover .hover-bg {
+  transition: fill linear 0.3s;
+}
+
+.icon-hover .hover-border {
+  transition: stroke linear 0.3s;
+}
+
+.icon-hover:hover .hover-bg {
+  fill: white;
+  transition: fill linear 0.3s;
+}
+
+.icon-hover:hover .hover-border {
+  stroke: white;
+  transition: stroke linear 0.3s;
+}
+
+/* footer */
+
+footer {
+  background: #20113d;
+  padding: 72px 0 44px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos-icons {
+  display: flex;
+  width: 414px;
+  justify-content: space-between;
+}
+
+.logo-footer path {
+  transition: fill 0.3s linear;
+}
+
+.logo-footer:hover path {
+  fill: #00a092;
+  transition: fill 0.3s linear;
+}
+
+.bottom-nav a {
+  color: white;
+}
+
+.footer-menu .cards-btn {
+  margin: 0;
+  padding: 21px 35px 25px 34px;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  bottom: 3px;
+  transition: background 0.3s linear;
+}
+
+.footer-menu .cards-btn {
+  color: white;
+  letter-spacing: 0;
+}
+
+.cards-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.cards-btn > svg {
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+
+.footer-menu .cards-btn:hover {
+  background: #00a092;
+  transition: background 0.3s linear;
+}
+
+.bottom-nav {
+  position: relative;
+  bottom: 6px;
+}
+
+.bottom-nav > ul {
+  justify-content: space-between;
+  width: 425px;
+}
+
+.bottom-nav > ul > li {
+  margin-left: 0;
+}
+
+.copiright-block {
+  margin-top: 67px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
+}
+
+.copiright {
+  display: flex;
+  align-items: center;
+  width: 447px;
+  justify-content: space-between;
+}
+
+.copiright-block .social-list {
+  justify-content: space-between;
+  width: 200px;
+}
+
+.copiright-block .social-list > li {
+  margin-left: 0;
+}
+
+.copiright > li {
+  color: white;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1919px) {
+  .wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .map {
+    background-position-x: 0;
+    background-size: 100%;
+    margin: 30px auto 100px;
+    height: 777px;
+  }
+
+  .icon-eagles {
+    top: 38%;
+    left: 8%;
+  }
+
+  .icon-aligator {
+    top: 40%;
+    left: 18%;
+  }
+
+  .icon-lion {
+    top: 44%;
+    left: 38%;
+  }
+
+  .icon-gorilla {
+    top: 46%;
+    left: 46%;
+  }
+
+  .icon-lemur {
+    top: 60%;
+    left: 53%;
+  }
+
+  .icon-panda {
+    top: 35%;
+    left: 69%;
+  }
+
+  .icon-tiger {
+    top: 54%;
+    left: 70%;
+  }
+
+  .icon-koala {
+    top: 64%;
+    left: 78%;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 74px 0 43px;
+    background: #20113d linear-gradient(180deg, white 22%, transparent 28%);
+    background-position: 0% 64%;
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+  }
+
+  footer .wrapper {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 0;
+    padding: 21px 34px 23px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 6px;
+  }
+
+  .bottom-nav > ul {
+    width: 347px;
+  }
+
+  .copiright-block .social-list > li {
+    margin-left: 0;
+  }
+
+  .copiright-block {
+    margin-top: 68px;
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* repeat style */
+
+  .wrapper {
+    width: 1000px;
+  }
+
+  /* HEADER */
+
+  .top-menu__list__items {
+    margin-left: 30px;
+  }
+
+  .social-list > li {
+    margin-left: 30px;
+  }
+
+  .social-list > li.youtube {
+    margin-left: 80px;
+  }
+
+  /* find where are the animals live */
+
+  main .wrapper {
+    width: 100%;
+  }
+
+  .map-heading {
+    margin-top: -37px;
+  }
+
+  .map {
+    background-position-x: 0;
+    background-size: 100%;
+    margin: 16px auto 100px;
+    height: 777px;
+  }
+
+  .icon-eagles {
+    top: 282px;
+    left: 94px;
+  }
+
+  .icon-aligator {
+    top: 316px;
+    left: 225px;
+  }
+
+  .icon-lion {
+    top: 341px;
+    left: 461px;
+  }
+
+  .icon-gorilla {
+    top: 360px;
+    left: 552px;
+  }
+
+  .icon-lemur {
+    top: 462px;
+    left: 643px;
+  }
+
+  .icon-panda {
+    top: 261px;
+    left: 824px;
+  }
+
+  .icon-tiger {
+    top: 408px;
+    left: 835px;
+  }
+
+  .icon-koala {
+    top: 493px;
+    left: 948px;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 74px 0 43px;
+    background: #20113d linear-gradient(180deg, white 22%, transparent 28%);
+    background-position: 0% 65%;
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+  }
+
+  footer .wrapper {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 0;
+    padding: 21px 34px 23px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 6px;
+  }
+
+  .bottom-nav > ul {
+    width: 347px;
+  }
+
+  .copiright-block .social-list > li {
+    margin-left: 0;
+  }
+
+  .copiright-block {
+    margin-top: 68px;
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1199px) {
+  .wrapper {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .nav-block .social {
+    display: none;
+  }
+
+  .logos-icons {
+    display: flex;
+    width: 346px;
+    justify-content: space-between;
+  }
+
+  .map {
+    margin: 0 0 100px;
+    height: 777px;
+    background-position-x: 10px;
+    background-size: 101%;
+  }
+
+  .icon-eagles {
+    top: 38%;
+    left: 8%;
+  }
+
+  .icon-aligator {
+    top: 40%;
+    left: 18%;
+  }
+
+  .icon-lion {
+    top: 44%;
+    left: 38%;
+  }
+
+  .icon-gorilla {
+    top: 46%;
+    left: 46%;
+  }
+
+  .icon-lemur {
+    top: 60%;
+    left: 53%;
+  }
+
+  .icon-panda {
+    top: 35%;
+    left: 69%;
+  }
+
+  .icon-tiger {
+    top: 54%;
+    left: 70%;
+  }
+
+  .icon-koala {
+    top: 64%;
+    left: 78%;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px;
+    background-position: 0% 64%;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 445px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 53px 0 0 0;
+    padding: 21px 34px 23px 34px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 0;
+    margin-top: 50px;
+  }
+
+  .bottom-nav > ul {
+    width: 445px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .copiright-block {
+    margin-top: 98px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright-block .social-list {
+    width: 220px;
+  }
+
+  .copiright {
+    margin-top: 36px;
+    width: 442px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .map {
+    height: 700px;
+  }
+
+  .icons svg {
+    width: 100px;
+    height: 150px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 40%;
+  }
+
+  .icon-gorilla {
+    top: 48%;
+    left: 48%;
+  }
+
+  .icon-lemur {
+    top: 65%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 56%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 66%;
+    left: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+  .map {
+    height: 600px;
+  }
+
+  .icons svg {
+    width: 80px;
+    height: 130px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 40%;
+  }
+
+  .icon-gorilla {
+    top: 48%;
+    left: 48%;
+  }
+
+  .icon-lemur {
+    top: 65%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 56%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 66%;
+    left: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .map {
+    height: 550px;
+  }
+
+  .icons svg {
+    width: 70px;
+    height: 120px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 40%;
+  }
+
+  .icon-gorilla {
+    top: 48%;
+    left: 48%;
+  }
+
+  .icon-lemur {
+    top: 65%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 56%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 66%;
+    left: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+  .map {
+    height: 500px;
+  }
+
+  .icons svg {
+    width: 60px;
+    height: 110px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 40%;
+  }
+
+  .icon-gorilla {
+    top: 48%;
+    left: 48%;
+  }
+
+  .icon-lemur {
+    top: 65%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 56%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 66%;
+    left: 80%;
+  }
+}
+
+@media screen and (min-width: 642px) and (max-width: 699px) {
+  .map {
+    height: 415px;
+  }
+
+  .icons svg {
+    width: 61px;
+    height: 100px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 40%;
+  }
+
+  .icon-gorilla {
+    top: 48%;
+    left: 48%;
+  }
+
+  .icon-lemur {
+    top: 65%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 56%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 66%;
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* repeat style */
+
+  .wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  /* HEADER */
+
+  .header-bg {
+    position: fixed;
+  }
+
+  .top-menu__list__items {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .top-menu__list__items > a {
+    color: white;
+  }
+
+  .top-menu__list__items_active > a {
+    color: #00a092;
+    cursor: default;
+  }
+
+  .nav-block {
+    position: relative;
+  }
+
+  #menu__toggle {
+    display: block;
+    opacity: 0;
+    width: 23px;
+  }
+
+  .menu__btn {
+    top: 6px;
+    right: 27px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
+  .menu__btn > span::before {
+    content: "";
+    top: -14px;
+  }
+
+  .menu__btn > span::after {
+    content: "";
+    top: 14px;
+  }
+
+  .nav-block .top-menu__list {
+    display: block;
+    text-align: center;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    background: #20113d;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(405deg);
+    background-color: white;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(450deg);
+    background-color: white;
+  }
+
+  #menu__toggle:checked ~ .top-menu__list {
+    visibility: visible;
+    left: 50%;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::after,
+  .nav-block .top-menu__list {
+    transition-duration: 0.7s;
+  }
+
+  .social {
+    display: none;
+  }
+
+  /* find where are the animals live */
+
+  main .wrapper {
+    max-width: 630px;
+  }
+
+  .map-heading {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    margin-left: 10px;
+  }
+
+  main {
+    padding-top: 86px;
+  }
+
+  .map {
+    margin: 67px 0 100px;
+    height: 415px;
+    background-position-x: 10px;
+    background-size: 101%;
+  }
+
+  .icons svg {
+    width: 62px;
+    height: 100px;
+  }
+
+  .icon-eagles svg {
+    width: 74px;
+    height: 108px;
+  }
+
+  .icon-eagles {
+    top: 37%;
+    left: 10%;
+  }
+
+  .icon-aligator {
+    top: 41%;
+    left: 21%;
+  }
+
+  .icon-lion {
+    top: 46%;
+    left: 42%;
+  }
+
+  .icon-gorilla {
+    top: 49%;
+    left: 49%;
+  }
+
+  .icon-lemur {
+    top: 62%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 38%;
+    left: 73%;
+  }
+
+  .icon-tiger {
+    top: 54%;
+    left: 73%;
+  }
+
+  .icon-koala {
+    top: 64%;
+    left: 81%;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px 0;
+    background-position: 0% 64.5%;
+  }
+
+  footer .wrapper {
+    margin-left: 27px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .logos-icons {
+    width: 445px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 53px 0 0 0;
+    padding: 21px 40px 23px 31px;
+    bottom: 4px;
+  }
+
+  .bottom-nav {
+    bottom: 0;
+    margin-top: 50px;
+  }
+
+  .bottom-nav > ul {
+    width: 445px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .copiright-block {
+    margin-top: 98px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright-block .social-list {
+    width: 220px;
+  }
+
+  .copiright {
+    margin-top: 36px;
+    width: 442px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 639px) {
+  .map {
+    height: 350px;
+  }
+
+  .icons svg {
+    width: 61px;
+    height: 100px;
+  }
+
+  .icon-eagles {
+    top: 43%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 42%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 51%;
+    left: 41%;
+  }
+
+  .icon-gorilla {
+    top: 53%;
+    left: 52%;
+  }
+
+  .icon-lemur {
+    top: 71%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 59%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 72%;
+    left: 80%;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 539px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .map {
+    height: 320px;
+  }
+
+  .map-heading {
+    margin-left: auto;
+  }
+
+  .icons svg {
+    width: 61px;
+    height: 100px;
+  }
+
+  .icon-eagles {
+    top: 36%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 33%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 38%;
+    left: 41%;
+  }
+
+  .icon-gorilla {
+    top: 41%;
+    left: 52%;
+  }
+
+  .icon-lemur {
+    top: 55%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 37%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 48%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 60%;
+    left: 80%;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+
+  footer {
+    padding: 50px 0 50px;
+    background-position: 0% 69.5%;
+    background-size: 100% 6px;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+
+  .logos-icons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos-icons .logo-footer {
+    margin-top: 0;
+  }
+
+  .logos-icons li {
+    margin-top: 27px;
+  }
+
+  .bottom-nav {
+    margin-top: 29px;
+  }
+
+  .bottom-nav > ul {
+    width: 300px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .bottom-nav .top-menu__list__items > a {
+    font-size: 16px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 33px 0 0 0;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .copiright-block {
+    margin-top: 28px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright {
+    margin-top: 65px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copiright li:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 439px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .map {
+    height: 260px;
+  }
+
+  .map-heading {
+    margin-left: auto;
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .icons svg {
+    width: 61px;
+    height: 100px;
+  }
+
+  .icon-eagles {
+    top: 22%;
+    left: 11%;
+  }
+
+  .icon-aligator {
+    top: 19%;
+    left: 20%;
+  }
+
+  .icon-lion {
+    top: 24%;
+    left: 41%;
+  }
+
+  .icon-gorilla {
+    top: 27%;
+    left: 52%;
+  }
+
+  .icon-lemur {
+    top: 41%;
+    left: 57%;
+  }
+
+  .icon-panda {
+    top: 23%;
+    left: 71%;
+  }
+
+  .icon-tiger {
+    top: 34%;
+    left: 72%;
+  }
+
+  .icon-koala {
+    top: 46%;
+    left: 80%;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+
+  footer {
+    padding: 50px 0 50px;
+    background-position: 0% 69.5%;
+    background-size: 100% 6px;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+
+  .logos-icons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos-icons .logo-footer {
+    margin-top: 0;
+  }
+
+  .logos-icons li {
+    margin-top: 27px;
+  }
+
+  .bottom-nav {
+    margin-top: 29px;
+  }
+
+  .bottom-nav > ul {
+    width: 300px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .bottom-nav .top-menu__list__items > a {
+    font-size: 16px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 33px 0 0 0;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .copiright-block {
+    margin-top: 28px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright {
+    margin-top: 65px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copiright li:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* repeat style */
+
+  .wrapper {
+    max-width: 300px;
+  }
+
+  /* HEADER */
+
+  .top-menu__list__items {
+    margin-top: 40px;
+  }
+
+  .menu__btn {
+    width: 22px;
+    height: 22px;
+    top: 7px;
+    right: 36px;
+  }
+
+  .nav-block .top-menu__list {
+    width: 100%;
+  }
+
+  #menu__toggle:checked ~ .top-menu__list {
+    left: 0%;
+  }
+
+  /* find where are the animals live */
+
+  main .wrapper {
+    max-width: 320px;
+  }
+
+  .map-heading {
+    font-size: 26px;
+    line-height: 34px;
+    margin-left: 10px;
+    text-transform: none;
+    margin-left: -8px;
+  }
+
+  main {
+    padding-top: 94px;
+  }
+
+  .map {
+    margin: 23px 0 50px;
+    height: 234px;
+    background-position-x: -27px;
+    background-size: 111%;
+  }
+
+  .icons svg {
+    width: 56px;
+  }
+
+  .icons.icon-eagles svg,
+  .icon-aligator svg,
+  .icon-lion svg,
+  .icon-tiger svg,
+  .icon-koala svg {
+    width: 50px;
+  }
+
+  .icon-eagles {
+    top: 28%;
+    left: 0%;
+  }
+
+  .icon-aligator {
+    top: 31%;
+    left: 12%;
+  }
+
+  .icon-lion {
+    top: 32%;
+    left: 35%;
+  }
+
+  .icon-gorilla {
+    top: 42%;
+    left: 42%;
+  }
+
+  .icon-lemur {
+    top: 51%;
+    left: 50%;
+  }
+
+  .icon-panda {
+    top: 25%;
+    left: 64%;
+  }
+
+  .icon-tiger {
+    top: 43%;
+    left: 70%;
+  }
+
+  .icon-koala {
+    top: 55%;
+    left: 79%;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 50px 0 50px;
+    background-position: 0% 69.5%;
+    background-size: 100% 6px;
+  }
+
+  footer .wrapper {
+    margin-left: auto;
+  }
+
+  .logos-icons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos-icons .logo-footer {
+    margin-top: 0;
+  }
+
+  .logos-icons li {
+    margin-top: 27px;
+  }
+
+  .bottom-nav {
+    margin-top: 29px;
+  }
+
+  .bottom-nav > ul {
+    width: 300px;
+  }
+
+  .bottom-nav .top-menu__list__items {
+    margin-top: 0;
+  }
+
+  .bottom-nav .top-menu__list__items > a {
+    font-size: 16px;
+  }
+
+  .footer-menu .cards-btn {
+    margin: 33px 0 0 0;
+    padding: 7px 20px 9px 20px;
+    text-transform: capitalize;
+    width: 300px;
+  }
+
+  .copiright-block {
+    margin-top: 28px;
+    border-top: none;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .copiright {
+    margin-top: 65px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copiright li:not(:first-child) {
+    margin-top: 40px;
+  }
+}
