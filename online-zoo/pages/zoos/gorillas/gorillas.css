@@ -7,7 +7,7 @@ html,
 body,
 div,
 span,
-applet,
+applet, 
 object,
 iframe,
 h1,
@@ -348,29 +348,6 @@ header,
   overflow: hidden;
 }
 
-.plug {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 18px 27px 64px 17px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.plug-text {
-  font-weight: 500;
-  font-size: 26px;
-  color: #ffffff;
-  letter-spacing: 1.4px;
-}
-
-.plug-logo {
-  align-self: flex-end;
-}
-
 .carousel-heading {
   margin-top: 104px;
   color: black;
@@ -410,29 +387,6 @@ header,
 .subvideo:hover {
   cursor: pointer;
   border: 2px solid #f58021;
-}
-
-.video-plug {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-}
-
-.video-plug .live {
-  background-color: transparent;
-  border-radius: 0px 0px 5px 0px;
-  border: 1px solid white;
-  padding: 8px 68px 8px 37px;
-  background-image: url("../../../assets/icons/cam.png");
-  background-repeat: no-repeat;
-  background-position: 130px 11px;
-  font-weight: 500;
-  font-size: 26px;
 }
 
 .arrow-right {
